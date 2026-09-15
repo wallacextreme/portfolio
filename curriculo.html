@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Currículo Profissional de Wallace de Paula Soares — Desenvolvedor Full Stack & Engenheiro de Software.">
+    <meta name="author" content="Wallace de Paula Soares">
+    <title>Currículo — Wallace de Paula Soares | Desenvolvedor Full Stack</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #1e40af;
+            --primary-light: #3b82f6;
+            --dark: #0f172a;
+            --text-muted: #475569;
+            --border-color: #cbd5e1;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --tag-bg: #eff6ff;
+            --tag-text: #1e40af;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--dark);
+            line-height: 1.5;
+            padding: 24px;
+        }
+
+        .cv-wrapper {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--border-color);
+            padding: 40px 48px;
+        }
+
+        /* Barra de Ações Web (oculta na impressão) */
+        .web-actions {
+            max-width: 860px;
+            margin: 0 auto 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .action-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            background: var(--primary);
+            color: #ffffff;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+
+        .action-btn:hover {
+            opacity: 0.9;
+        }
+
+        .action-btn-secondary {
+            background: #e2e8f0;
+            color: var(--dark);
+        }
+
+        .action-btn-secondary:hover {
+            background: #cbd5e1;
+        }
+
+        /* Header do CV */
+        .cv-header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 24px;
+        }
+
+        .cv-header h1 {
+            font-size: 2.1rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 4px;
+            letter-spacing: -0.5px;
+        }
+
+        .cv-header .headline {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+        }
+
+        .contact-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 20px;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+        }
+
+        .contact-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .contact-item i {
+            color: var(--primary-light);
+            font-size: 0.95rem;
+        }
+
+        .contact-item a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-item a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        /* Seções */
+        .cv-section {
+            margin-bottom: 26px;
+        }
+
+        .section-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 6px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-title i {
+            font-size: 1rem;
+            color: var(--primary-light);
+        }
+
+        p.summary-text {
+            font-size: 0.92rem;
+            color: var(--dark);
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Itens e Cartões */
+        .cv-item, .project-card, .education-card {
+            margin-bottom: 16px;
+            padding-bottom: 14px;
+            border-bottom: 1px dashed #e2e8f0;
+        }
+
+        .cv-item:last-child, .project-card:last-child, .education-card:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 4px;
+        }
+
+        .item-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .item-role {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .item-date {
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        .item-credential {
+            background: var(--tag-bg);
+            border: 1px solid #bfdbfe;
+            border-radius: 6px;
+            padding: 10px 14px;
+            margin-top: 8px;
+            font-size: 0.86rem;
+        }
+
+        .credential-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 6px;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+        }
+
+        .credential-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 6px;
+            font-size: 0.84rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .credential-link:hover {
+            text-decoration: underline;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 8px;
+            margin-bottom: 4px;
+        }
+
+        .project-title {
+            font-size: 0.98rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .project-stack {
+            font-size: 0.84rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .item-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 6px;
+        }
+
+        .item-list li {
+            position: relative;
+            padding-left: 16px;
+            font-size: 0.88rem;
+            color: var(--dark);
+            margin-bottom: 4px;
+            line-height: 1.45;
+        }
+
+        .item-list li::before {
+            content: "•";
+            position: absolute;
+            left: 4px;
+            color: var(--primary-light);
+            font-weight: bold;
+        }
+
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+        }
+
+        .skills-table td {
+            padding: 6px 0;
+            vertical-align: top;
+        }
+
+        .skills-table td.skill-label {
+            font-weight: 700;
+            color: var(--primary);
+            width: 28%;
+        }
+
+        .skills-table td.skill-content {
+            color: var(--dark);
+        }
+
+        /* Bloco de Regras para Impressão e PDF */
+        @page {
+          size: A4;
+          margin: 12mm 15mm;
+        }
+
+        @media print {
+          body {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+            background: #ffffff;
+            padding: 0;
+          }
+          .cv-wrapper {
+            box-shadow: none;
+            border: none;
+            padding: 0;
+            max-width: 100%;
+          }
+          /* Evita que um projeto ou experiência quebre no meio entre páginas */
+          .cv-item, .project-card, .education-card {
+            break-inside: avoid;
+            page-break-inside: avoid;
+          }
+          /* Esconde botões de navegação, tema escuro ou rodapés da web */
+          .no-print, header, nav, .theme-toggle {
+            display: none !important;
+          }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ações em Tela Web -->
+    <div class="web-actions no-print">
+        <a href="index.html" class="action-btn action-btn-secondary" title="Retornar ao Portfólio Principal">
+            <i class="fas fa-arrow-left" aria-hidden="true"></i>
+            <span>Voltar ao Portfólio</span>
+        </a>
+        <button onclick="window.print()" class="action-btn" title="Imprimir ou Salvar em PDF">
+            <i class="fas fa-print" aria-hidden="true"></i>
+            <span>Imprimir / Salvar em PDF (Ctrl + P)</span>
+        </button>
+    </div>
+
+    <main class="cv-wrapper">
+        <!-- Cabeçalho -->
+        <header class="cv-header">
+            <h1>Wallace de Paula Soares</h1>
+            <div class="headline">Desenvolvedor Full Stack &amp; Engenheiro de Software</div>
+            
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <i class="fas fa-location-dot" aria-hidden="true"></i>
+                    <span>Rio de Janeiro - RJ, Brasil (Remoto / Híbrido)</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:wallacextreme@hotmail.com">wallacextreme@hotmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                    <a href="https://github.com/wallacextreme" target="_blank" rel="noopener noreferrer">github.com/wallacextreme</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    <a href="https://linkedin.com/in/wallacextreme" target="_blank" rel="noopener noreferrer">linkedin.com/in/wallacextreme</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                    <a href="https://x.com/Wallace99341593" target="_blank" rel="noopener noreferrer">@Wallace99341593</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Perfil / Resumo -->
+        <section class="cv-section">
+            <h2 class="section-title"><i class="fas fa-user-check" aria-hidden="true"></i> Perfil Profissional</h2>
+            <p class="summary-text">
+                Desenvolvedor de Software Full Stack com sólida vivência na concepção, arquitetura e entrega de sistemas web modernos, aplicações <strong>Offline-First</strong>, Progressive Web Apps (<strong>PWA</strong>), soluções Desktop baseadas em <strong>Tauri</strong> e engenharia de jogos 2D com <strong>Phaser 3</strong>. Foco contínuo em <strong>Clean Architecture</strong>, modularização, tipagem estática rigorosa em <strong>TypeScript</strong>, testes automatizados (<strong>Vitest/Jest</strong>) e eliminação de falhas em regras transacionais de negócios. Empreendedor com experiência prática em diagnóstico de hardware, montagem de estações de trabalho e infraestrutura de TI.
+            </p>
+        </section>
+
+        <!-- Formação Acadêmica & Credenciais -->
+        <section class="cv-section">
+            <h2 class="section-title"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Formação Acadêmica &amp; Credenciais</h2>
+            <div class="education-card">
+                <div class="item-header">
+                    <div class="item-title">Universidade Estácio de Sá</div>
+                    <div class="item-date">Conclusão: 30/06/2023 | Colação de Grau: 14/07/2023</div>
+                </div>
+                <div class="item-role">Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (Grau: Tecnólogo)</div>
+                
+                <div class="item-credential">
+                    <div><strong>Registro do Diploma:</strong> Nº 39231, Livro 1, fls 44709 em 17/07/2023 (Processo SRD/6370860-IP/2023)</div>
+                    <div class="credential-meta">
+                        <span><strong>Código de Validação:</strong> <code>163.163.80fed31e1b42</code></span>
+                        <span><strong>Reconhecimento MEC:</strong> Portaria nº 291/2014 &amp; Renovação nº 155/2023</span>
+                    </div>
+                    <a href="https://consultadiploma.estacio.br/diploma/163.163.80fed31e1b42" target="_blank" rel="noopener noreferrer" class="credential-link">
+                        <i class="fas fa-shield-halved" aria-hidden="true"></i> Validar Diploma no Portal Oficial da Estácio
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiência Profissional -->
+        <section class="cv-section">
+            <h2 class="section-title"><i class="fas fa-briefcase" aria-hidden="true"></i> Experiência Profissional</h2>
+            
+            <div class="cv-item">
+                <div class="item-header">
+                    <div class="item-title">TecnoService — Suporte Técnico &amp; Infraestrutura de TI</div>
+                    <div class="item-date">Empreendimento Próprio</div>
+                </div>
+                <div class="item-role">Fundador &amp; Especialista Técnico de TI</div>
+                <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 6px;">
+                    <strong>Instagram Comercial:</strong> <a href="https://www.instagram.com/tecnoservicenf" target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: none;">@tecnoservicenf</a>
+                </div>
+                <ul class="item-list">
+                    <li>Diagnóstico aprofundado, manutenção preventiva/corretiva e testes de estresse em hardware e sistemas operacionais.</li>
+                    <li>Montagem sob medida e otimização de estações de trabalho para computação de alto desempenho, produtividade e desenvolvimento.</li>
+                    <li>Implantação e gerenciamento de infraestrutura de redes locais (LAN/WLAN), roteamento seguro e organização estruturada de equipamentos.</li>
+                    <li>Atendimento técnico corporativo e comercial, garantia de disponibilidade de sistemas de ponto de venda (PDV) e rotinas de backup.</li>
+                </ul>
+            </div>
+
+            <div class="cv-item">
+                <div class="item-header">
+                    <div class="item-title">Desenvolvedor Full Stack &amp; Engenharia de Sistemas</div>
+                    <div class="item-date">2022 – Presente</div>
+                </div>
+                <div class="item-role">Projetos Comerciais, Aplicações Reais &amp; Open Source</div>
+                <ul class="item-list">
+                    <li>Desenvolvimento ponta a ponta de soluções web modernas com Next.js 15, React 19, TypeScript e bancos de dados Supabase/PostgreSQL.</li>
+                    <li>Engenharia de sistemas Offline-First com persistência local em IndexedDB/SQLite e empacotamento desktop nativo para Windows via Tauri.</li>
+                    <li>Modelagem de regras críticas de negócios, validações transacionais, cálculos monetários em centavos e controle de acesso baseado em papéis (RBAC com RLS).</li>
+                    <li>Criação de PWA industrial com motor próprio de diagramação e impressão milimétrica para 21 modelos homologados de etiquetas Pimaco.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projetos em Destaque -->
+        <section class="cv-section">
+            <h2 class="section-title"><i class="fas fa-layer-group" aria-hidden="true"></i> Projetos em Destaque</h2>
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-title">1. Plataforma de Pizzaria Full-Stack</div>
+                    <a href="https://github.com/wallacextreme/pizzaria-platform" target="_blank" rel="noopener noreferrer" style="font-size: 0.82rem; color: var(--primary); text-decoration: none; font-weight: 600;">Repositório GitHub</a>
+                </div>
+                <div class="project-stack">Next.js 15, React 19, TypeScript, Supabase (Auth, RLS, Storage, Realtime), Tailwind CSS, Vitest</div>
+                <ul class="item-list">
+                    <li>Painel administrativo com Kanban em tempo real sincronizado via Supabase Realtime/WebSocket.</li>
+                    <li>Segurança rigorosa com Row Level Security (RLS) granular no PostgreSQL, impedindo vazamento entre tenants e usuários.</li>
+                    <li>Regras de negócio calculadas no backend em centavos inteiros, eliminando imprecisões de arredondamento financeiro.</li>
+                    <li>Compressão de imagem client-side via Canvas API para formato WebP antes de envio ao Supabase Storage.</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-title">2. EtiquetaPro — Gerador de Etiquetas PWA (Offline-First)</div>
+                    <div>
+                        <a href="https://wallacextreme.github.io/etiquetapro/" target="_blank" rel="noopener noreferrer" style="font-size: 0.82rem; color: var(--primary); text-decoration: none; font-weight: 600; margin-right: 10px;">Demo Online</a>
+                        <a href="https://github.com/wallacextreme/etiquetapro" target="_blank" rel="noopener noreferrer" style="font-size: 0.82rem; color: var(--primary); text-decoration: none; font-weight: 600;">Repositório GitHub</a>
+                    </div>
+                </div>
+                <div class="project-stack">JavaScript Vanilla ES6+, Service Workers, Cache Storage API, CSS Paged Media, IndexedDB</div>
+                <ul class="item-list">
+                    <li>Motor de diagramação e impressão milimétrica (`mm`) para 21 gabaritos Pimaco homologados (A4 e Carta).</li>
+                    <li>Operação 100% autônoma e Offline-First via Service Worker sem nenhuma dependência de rede após primeira carga.</li>
+                    <li>Instalação PWA multiplataforma ultraleve sem necessidade de frameworks pesados ou bibliotecas externas.</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-title">3. ERP PRO &amp; Controle de Pagamentos</div>
+                </div>
+                <div class="project-stack">Tauri (.msi / .exe Windows), Offline-First, TypeScript, Vite, IndexedDB, SQLite, Tailwind CSS</div>
+                <ul class="item-list">
+                    <li>Arquitetura transacional local sem dependência de internet para conciliação contínua de contas a pagar e receber.</li>
+                    <li>Mecanismos de contingência com rotinas de backup e restauração em arquivo JSON e exportação analítica em CSV.</li>
+                    <li>Distribuição executável para Windows com inicialização instantânea e baixo consumo de recursos de memória.</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-title">4. Cinzas do Éter — JRPG 16-Bit</div>
+                </div>
+                <div class="project-stack">Phaser 3, TypeScript, Vite, Bun, Vitest</div>
+                <ul class="item-list">
+                    <li>Arquitetura 2D orientada a entidades e desacoplamento de subsistemas de renderização, diálogos e colisão.</li>
+                    <li>Cobertura de testes automatizados com Vitest para validação de máquinas de estado e cálculos de combate.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Competências Técnicas -->
+        <section class="cv-section">
+            <h2 class="section-title"><i class="fas fa-code" aria-hidden="true"></i> Competências Técnicas</h2>
+            <table class="skills-table">
+                <tr>
+                    <td class="skill-label">Frontend &amp; PWA:</td>
+                    <td class="skill-content">TypeScript, JavaScript ES6+, React, Next.js, HTML5 Semântico, CSS3, Tailwind CSS, Service Workers, Cache Storage API.</td>
+                </tr>
+                <tr>
+                    <td class="skill-label">Backend &amp; Dados:</td>
+                    <td class="skill-content">Node.js, Express.js, PHP, Supabase (Auth, RLS, Storage, Realtime), PostgreSQL, Firebase, REST APIs, IndexedDB, SQLite.</td>
+                </tr>
+                <tr>
+                    <td class="skill-label">Desktop &amp; Jogos:</td>
+                    <td class="skill-content">Tauri (.msi / .exe), Phaser 3 (2D Game Architecture), Vite, Bun.</td>
+                </tr>
+                <tr>
+                    <td class="skill-label">Qualidade &amp; Práticas:</td>
+                    <td class="skill-content">Vitest, Jest, Git, GitHub, Clean Architecture, Princípios SOLID, CI/CD, Desenvolvimento Assistido por IA.</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>
