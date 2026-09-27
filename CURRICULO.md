@@ -1,4 +1,4 @@
-# Wallace de Paula Soares
+﻿# Wallace de Paula Soares
 **Desenvolvedor Full Stack & Engenheiro de Software**
 
 Rio de Janeiro - RJ, Brasil *(Disponível para atuação Remota / Híbrida)*  
@@ -49,7 +49,17 @@ Desenvolvedor de Software Full Stack com sólida vivência na concepção, arqui
 
 ## 🚀 Projetos em Destaque
 
-### 1. **Plataforma de Pizzaria Full-Stack**
+### 1. **FiscalFlow — Gestão & Auditoria Fiscal Eletrônica**
+* **Stack:** Tauri 2 (Rust), TypeScript (Strict Mode), SQLite 3 local, WebAssembly (`sql.js`), Tailwind CSS, Vitest.
+* **Repositório:** [github.com/wallacextreme/FiscalFlow](https://github.com/wallacextreme/FiscalFlow) | **Demo Online:** [wallacextreme.github.io/FiscalFlow](https://wallacextreme.github.io/FiscalFlow/)
+* Arquitetura 100% Offline-First com persistência relacional em SQLite embutido via Tauri SQL Plugin e fallback WebAssembly no navegador.
+* Leitura e extração de grupos fiscais oficiais: NF-e 4.00, NFC-e, NFS-e (Padrão Nacional e ABRASF 2.04), CT-e 4.00 e SPED Fiscal (EFD ICMS/IPI com Registros 0000, 0100, C100 e E110).
+* Algoritmo matemático oficial do Módulo 11 da SEFAZ para validação do Dígito Verificador (DV) da Chave de Acesso de 44 dígitos e hashing criptográfico SHA-256 para garantia de imutabilidade e desduplicação.
+* Central de exportação contábil brasileira (CSV com delimitador `;`, decimais com vírgula e UTF-8 BOM para Excel, e pacotes ZIP com manifesto estruturado de entrega).
+* Suíte exaustiva de 126 testes automatizados com 100% de aprovação no Vitest, cobertura analítica V8 e tipagem estrita com zero erros.
+* Governança técnica completa: avaliado sob o modelo de qualidade de produto de software **ISO/IEC 25010:2023** (9 características, scorecard e safety fiscal) e documentação de processos do SGQ alinhada à **ISO 9001:2026** (5 procedimentos operacionais e foco climático).
+
+### 2. **Plataforma de Pizzaria Full-Stack**
 * **Stack:** Next.js 15, React 19, TypeScript, Supabase (Auth, Storage, Realtime, PostgreSQL), Tailwind CSS, Vitest.
 * **Repositório:** [github.com/wallacextreme/pizzaria-platform](https://github.com/wallacextreme/pizzaria-platform)
 * Painel administrativo com Kanban em tempo real sincronizado via Supabase Realtime e WebSocket.
@@ -58,7 +68,7 @@ Desenvolvedor de Software Full Stack com sólida vivência na concepção, arqui
 * Pipeline client-side com compressão dinâmica via Canvas API para formato WebP antes do envio ao storage.
 * Suíte completa de testes unitários e de integração com Vitest.
 
-### 2. **EtiquetaPro — Gerador de Etiquetas PWA (Offline-First)**
+### 3. **EtiquetaPro — Gerador de Etiquetas PWA (Offline-First)**
 * **Stack:** JavaScript Vanilla (ES6+), PWA, Service Worker, Cache Storage API, CSS Paged Media, IndexedDB.
 * **Repositório:** [github.com/wallacextreme/etiquetapro](https://github.com/wallacextreme/etiquetapro) | **Demo:** [wallacextreme.github.io/etiquetapro](https://wallacextreme.github.io/etiquetapro/)
 * Motor de diagramação física milimétrica (`mm`) homologado para 21 gabaritos Pimaco (formatos A4 e Carta).
@@ -85,3 +95,4 @@ Desenvolvedor de Software Full Stack com sólida vivência na concepção, arqui
 * **Backend & Banco de Dados:** Node.js, Express.js, PHP, Supabase (Auth, RLS, Storage, Realtime), Firebase, PostgreSQL, REST APIs.
 * **Desktop & Game Development:** Tauri (.exe / .msi), Phaser 3 (2D Game Architecture), Vite, Bun.
 * **Qualidade, Metodologia & DevOps:** Vitest, Jest, Git, GitHub, Clean Architecture, Princípios SOLID, CI/CD, Desenvolvimento Assistido por IA.
+

@@ -1,4 +1,4 @@
-# Portfólio Profissional — Wallace Soares
+﻿# Portfólio Profissional — Wallace Soares
 
 [![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub_Pages-2563eb?style=for-the-badge&logo=github&logoColor=white)](https://wallacextreme.github.io/portfolio/)
 [![Formação](https://img.shields.io/badge/Graduado-Estácio_de_Sá-059669?style=for-the-badge&logo=academia&logoColor=white)](https://consultadiploma.estacio.br/diploma/163.163.80fed31e1b42)
@@ -33,29 +33,35 @@ O portfólio está disponível publicamente com duas experiências visuais compl
 
 ## 🚀 Projetos em Destaque
 
-### 1. [Plataforma de Pizzaria Full-Stack](https://github.com/wallacextreme/pizzaria-platform)
+### 1. [FiscalFlow — Gestão & Auditoria Fiscal Eletrônica](https://github.com/wallacextreme/FiscalFlow)
+* **Stack**: Tauri 2 (Rust), TypeScript (Strict Mode), SQLite 3 local, WebAssembly (`sql.js`), Tailwind CSS, Vitest (126 testes).
+* **Engenharia**: Ecossistema corporativo 100% Offline-First para gestão, auditoria e escrituração contábil de documentos fiscais (NF-e v4.00, NFC-e, NFS-e Padrão Nacional/ABRASF, CT-e e SPED Fiscal EFD ICMS/IPI). Validação do dígito verificador da Chave de Acesso via Módulo 11 da SEFAZ, desduplicação exata com hash SHA-256 e integridade referencial em banco relacional SQLite local.
+* **Governança & Qualidade ISO**: Avaliado sob a norma **ISO/IEC 25010:2023** (9 características de qualidade de produto, scorecard executivo e safety fiscal) e alinhado aos processos do SGQ **ISO 9001:2026** (5 procedimentos operacionais, cultura da qualidade e foco climático).
+* **Demo Online**: [https://wallacextreme.github.io/FiscalFlow/](https://wallacextreme.github.io/FiscalFlow/)
+
+### 2. [Plataforma de Pizzaria Full-Stack](https://github.com/wallacextreme/pizzaria-platform)
 * **Stack**: Next.js 15, React 19, TypeScript, Supabase, PostgreSQL com RLS granular, Tailwind CSS, Vitest.
 * **Engenharia**: Painel administrativo com Kanban em tempo real via Supabase Realtime, segurança com Row Level Security e RBAC, regras de negócio e cálculos de moeda em centavos inteiros no backend, pipeline client-side de compressão Canvas para WebP e suíte de testes com Vitest.
 
-### 2. [EtiquetaPro — Gerador de Etiquetas PWA](https://github.com/wallacextreme/etiquetapro)
+### 3. [EtiquetaPro — Gerador de Etiquetas PWA](https://github.com/wallacextreme/etiquetapro)
 * **Stack**: JavaScript Vanilla, PWA, Service Worker, Cache Storage API, CSS Paged Media.
 * **Engenharia**: Motor de diagramação e impressão física milimétrica (`mm`) para 21 gabaritos Pimaco homologados (A4 e Carta), fila dinâmica de impressão, funcionamento 100% offline e instalação nativa PWA sem frameworks pesados.
 * **Demo Online**: [https://wallacextreme.github.io/etiquetapro/](https://wallacextreme.github.io/etiquetapro/)
 
-### 3. [Controle de Entregas — Autopeças (PWA Logística)](https://github.com/wallacextreme/controle-entregas-friburgo)
+### 4. [Controle de Entregas — Autopeças (PWA Logística)](https://github.com/wallacextreme/controle-entregas-friburgo)
 * **Stack**: JavaScript Vanilla ES6+, IndexedDB v2, PWA, Service Worker, CSS Paged Media.
 * **Engenharia**: Arquitetura em camadas desacoplada (UI, Services, Repositories, DB) em arquivo único sem dependências externas. Quadro Kanban de 5 colunas com drag & drop nativo, visão mobile-first para motoboys com Waze/Maps/WhatsApp, módulo financeiro de acerto diário com saldo líquido, valores em centavos inteiros (eliminação do IEEE 754 float), máquina de estados estrita com 8 estados, prevenção de troco fantasma, serialização por mutex assíncrono e suíte de 136 testes automatizados.
 * **Demo Online**: [https://wallacextreme.github.io/controle-entregas-friburgo/](https://wallacextreme.github.io/controle-entregas-friburgo/)
 
-### 4. Controle de Pagamentos & ERP PRO
+### 5. Controle de Pagamentos & ERP PRO
 * **Stack**: Offline-First, Tauri (Desktop Windows .msi e .exe), IndexedDB, SQLite, Tailwind CSS, PWA.
 * **Engenharia**: Arquitetura transacional local sem dependência de internet, rotinas de backup e restauração JSON, exportação CSV e distribuição desktop nativa para Windows.
 
-### 5. Cinzas do Éter — JRPG 16-Bit
+### 6. Cinzas do Éter — JRPG 16-Bit
 * **Stack**: Phaser 3, TypeScript, Vite, Bun, Vitest, Game Architecture.
 * **Engenharia**: Arquitetura modular de jogos 2D com desacoplamento de entidades (Player Entity, Map Manager por camadas, Dialogue System dinâmico) e testes automatizados.
 
-### 6. [Arcane Lore — Portal RPG](https://github.com/wallacextreme/Arcane-Lore)
+### 7. [Arcane Lore — Portal RPG](https://github.com/wallacextreme/Arcane-Lore)
 * **Stack**: HTML5 Semântico, CSS3 Flexbox/Gradients, Bootstrap 5.3.0.
 * **Engenharia**: Portal temático com telas de autenticação estilizadas e design responsivo cross-device.
 
@@ -79,3 +85,4 @@ O portfólio está disponível publicamente com duas experiências visuais compl
 * **X (Twitter)**: [@Wallace99341593](https://x.com/Wallace99341593)
 * **TecnoService NF | IT Support & Services**: [@tecnoservicenf](https://www.instagram.com/tecnoservicenf) *(Empreendimento próprio em suporte técnico, montagem de estações de trabalho e infraestrutura de TI)*
 * **Localização**: Rio de Janeiro - RJ, Brasil (Disponível para atuação Remota / Híbrida)
+
