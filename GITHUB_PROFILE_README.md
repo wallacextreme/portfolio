@@ -39,6 +39,8 @@
 
 | Projeto | Descrição & Engenharia | Tecnologias |
 | :--- | :--- | :--- |
+| 🛡️ **[FiscalFlow — Gestão & Auditoria Fiscal](https://github.com/wallacextreme/FiscalFlow)** | Ecossistema corporativo Offline-First em Tauri 2 e SQLite para gestão e escrituração fiscal (NF-e, NFC-e, NFS-e, CT-e, SPED) com 126 testes e governança ISO/IEC 25010 / ISO 9001. | Tauri 2 (Rust), TypeScript, SQLite, WebAssembly, Tailwind CSS |
+| 🚗 **[Catálogo de Palhetas Automotivas](https://github.com/wallacextreme/catalogo-palhetas)** | Sistema Offline-First e Cross-Reference de palhetas (Dyna, CINOY, Vetor) para linha leve com busca por medidas/posições, rastreabilidade e 29 testes automatizados. | Preact, TypeScript, Tailwind CSS v4, PWA, Tauri v2, Dexie |
 | 🍕 **[Plataforma de Pizzaria](https://github.com/wallacextreme/pizzaria-platform)** | Plataforma e-commerce completa com painel administrativo Kanban em tempo real, cálculos monetários em centavos no backend, RLS granular e suíte de testes. | Next.js 15, React 19, Supabase, TypeScript, Vitest |
 | 🏷️ **[EtiquetaPro PWA](https://github.com/wallacextreme/etiquetapro)** | Gerador industrial de etiquetas homologado para 21 gabaritos Pimaco, operando 100% offline via Service Worker com precisão milimétrica de impressão. | PWA, JavaScript ES6+, Cache API, CSS Paged Media |
 | 💼 **ERP PRO & Controle de Pagamentos** | Sistema financeiro Offline-First empacotado nativamente para Windows com persistência IndexedDB/SQLite, backup JSON e relatórios CSV. | Tauri, TypeScript, Vite, IndexedDB, SQLite |
