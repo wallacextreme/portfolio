@@ -1021,7 +1021,7 @@
         }
 
         /* ==============================================================
-           VIEW 2: CURRÍCULO ATS & A4 PRINTABLE VIEW (curriculo.html)
+           VIEW 2: CURRÍCULO PROFISSIONAL (curriculo.html)
            ============================================================== */
         .cv-wrapper {
             padding-top: 105px;
@@ -1108,51 +1108,6 @@
         }
         .cv-item ul li {
             margin-bottom: 4px;
-        }
-
-        /* ==============================================================
-           VIEW 3: AUDITORIA & PROMPT ANTIGRAVITY 10/10 HUB
-           ============================================================== */
-        .hub-wrapper {
-            padding-top: 105px;
-            padding-bottom: 60px;
-        }
-        .hub-tabs {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        .code-panel {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius);
-            padding: 22px;
-            box-shadow: var(--shadow-lg);
-        }
-        .code-panel-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 10px;
-            padding-bottom: 14px;
-            margin-bottom: 14px;
-            border-bottom: 1px solid var(--border-color);
-        }
-        .code-pre {
-            background: var(--light);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 18px;
-            font-family: monospace;
-            font-size: 0.84rem;
-            color: var(--dark);
-            white-space: pre-wrap;
-            word-break: break-word;
-            max-height: 540px;
-            overflow-y: auto;
-            line-height: 1.55;
         }
 
         /* Footer */
@@ -1292,9 +1247,8 @@
                     <li><button type="button" class="nav-btn" data-view="portfolio" data-scroll="skills">Stack</button></li>
                     <li><button type="button" class="nav-btn" data-view="portfolio" data-scroll="projects">Projetos (10)</button></li>
                     <li><button type="button" class="nav-btn" data-view="portfolio" data-scroll="contact">Contato</button></li>
-                    <li><button type="button" class="nav-btn" data-view="curriculo">Currículo ATS</button></li>
-                    <li><button type="button" class="nav-btn" data-view="antigravity">Prompt 10/10 &amp; MD</button></li>
-                </ul>
+                    <li><button type="button" class="nav-btn" data-view="curriculo">Currículo</button></li>
+                    </ul>
 
                 <div class="nav-actions">
                     <button type="button" class="theme-switch-btn" id="hunterModeBtn" title="Alternar entre Modo Clássico e Modo Solo Leveling (Hunter Rank S)">
@@ -1357,7 +1311,7 @@
                             </button>
                             <button type="button" class="btn btn-outline" data-goto-view="curriculo">
                                 <i class="fas fa-file-lines" aria-hidden="true"></i>
-                                <span>Currículo ATS / PDF</span>
+                                <span>Ver Currículo / CV</span>
                             </button>
                             <a href="https://github.com/wallacextreme" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
                                 <i class="fab fa-github" aria-hidden="true"></i>
@@ -1998,14 +1952,14 @@
     </main>
 
     <!-- ==================================================================
-         VIEW 2: CURRÍCULO ATS & A4 IMPRIMÍVEL (curriculo.html integrado)
+         VIEW 2: CURRÍCULO PROFISSIONAL (curriculo.html integrado)
          ================================================================== -->
     <section id="view-curriculo" class="app-view active cv-wrapper">
         <div class="container">
             <div class="cv-toolbar">
                 <div>
-                    <strong style="font-size: 1rem; color: var(--dark);">📄 Currículo Otimizado para ATS (Gupy, Greenhouse, LinkedIn) &amp; Impressão A4</strong>
-                    <p style="font-size: 0.82rem; color: var(--gray);">Layout limpo de coluna única, palavras-chave exatas de engenharia e formatação pronta para salvar como PDF.</p>
+                    <strong style="font-size: 1rem; color: var(--dark);">📄 Currículo Profissional — Wallace de Paula Soares</strong>
+                    <p style="font-size: 0.82rem; color: var(--gray);">Versão executiva completa formatada para visualização online e impressão direta em folha A4 / PDF.</p>
                 </div>
                 <div style="display: flex; gap: 10px; flex-wrap: wrap;">
                     <a href="Curriculo_Wallace_Soares_2026.pdf" download="Curriculo_Wallace_Soares_2026.pdf" class="btn btn-primary btn-sm" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">
@@ -2013,9 +1967,6 @@
                     </a>
                     <button type="button" class="btn btn-outline btn-sm" id="printCvBtn">
                         <i class="fas fa-print" aria-hidden="true"></i> Imprimir / Salvar PDF (A4)
-                    </button>
-                    <button type="button" class="btn btn-outline btn-sm" id="copyCvMdBtn">
-                        <i class="fas fa-copy" aria-hidden="true"></i> Copiar Markdown do Currículo
                     </button>
                     <button type="button" class="btn btn-outline btn-sm" data-goto-view="portfolio">
                         <i class="fas fa-arrow-left" aria-hidden="true"></i> Voltar ao Portfólio
@@ -2157,38 +2108,6 @@
         </div>
     </section>
 
-    <!-- ==================================================================
-         VIEW 3: CENTRAL DE AUDITORIA, PROMPT ANTIGRAVITY 10/10 & MARKDOWNS
-         ================================================================== -->
-    <section id="view-antigravity" class="app-view hub-wrapper">
-        <div class="container">
-            <div class="section-title">
-                <h2>Central de Automação: Prompt Antigravity 10/10 &amp; Arquivos</h2>
-                <p>Copie com 1 clique o Prompt Mestre DevSecOps para o Antigravity, o README do seu perfil GitHub, o Currículo Markdown e o .env.example</p>
-            </div>
-
-            <div class="hub-tabs">
-                <button type="button" class="filter-btn active" data-doc="prompt">🚀 1. Prompt Antigravity 10/10 (DevSecOps &amp; Publicação)</button>
-                <button type="button" class="filter-btn" data-doc="curriculo">📄 2. Currículo Markdown (ATS / GitHub)</button>
-                <button type="button" class="filter-btn" data-doc="readme">🐙 3. README.md de Perfil (wallacextreme/wallacextreme)</button>
-                <button type="button" class="filter-btn" data-doc="env">🔒 4. Template .env.example Universal</button>
-            </div>
-
-            <div class="code-panel">
-                <div class="code-panel-header">
-                    <div>
-                        <h3 id="docPanelTitle" style="font-size: 1.1rem; color: var(--dark);">🚀 Prompt Mestre 10/10 para Colar no Google Antigravity</h3>
-                        <p id="docPanelDesc" style="font-size: 0.82rem; color: var(--gray);">Automatiza a limpeza de chaves privadas no histórico Git, criação de .env.example, geração de dados seed fictícios e mudança para Public.</p>
-                    </div>
-                    <button type="button" class="btn btn-primary btn-sm" id="copyCurrentDocBtn">
-                        <i class="fas fa-copy" aria-hidden="true"></i> Copiar Conteúdo Completo
-                    </button>
-                </div>
-                <pre class="code-pre" id="docPanelPre"></pre>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -2203,9 +2122,8 @@
                     <h4 style="margin-bottom: 10px;">Acesso Rápido</h4>
                     <ul class="footer-links">
                         <li><button type="button" data-goto-view="portfolio">Portfólio Principal (10 Projetos)</button></li>
-                        <li><button type="button" data-goto-view="curriculo">Currículo ATS (Imprimir PDF A4)</button></li>
-                        <li><button type="button" data-goto-view="antigravity">Prompt Antigravity 10/10 &amp; Markdown</button></li>
-                    </ul>
+                        <li><button type="button" data-goto-view="curriculo">Currículo (Visualizar / Salvar PDF)</button></li>
+                        </ul>
                 </div>
                 <div>
                     <h4 style="margin-bottom: 10px;">Credenciais Verificadas</h4>
@@ -2224,30 +2142,6 @@
     </footer>
 
     <script>
-        // Embedded Documents for the Interactive Copy Hub
-        const EMBEDDED_DOCS = {
-            prompt: {
-                title: "🚀 Prompt Mestre 10/10 para Colar no Google Antigravity",
-                desc: "Automatiza a limpeza de chaves privadas no histórico Git, criação de .env.example, geração de dados seed fictícios e mudança para Public.",
-                content: "# \ud83d\ude80 PROMPT MESTRE 10/10 PARA COLAR NO GOOGLE ANTIGRAVITY (OU CURSOR / CLAUDE CODE / ROO CODE)\n\n> **Como usar:** Copie todo o bloco abaixo e cole diretamente no **Google Antigravity** (ou no seu agente local com acesso ao terminal e aos seus diret\u00f3rios de projetos). Ele executar\u00e1 uma auditoria DevSecOps rigorosa, limpar\u00e1 chaves privadas do hist\u00f3rico Git, criar\u00e1 arquivos `.env.example` e dados fict\u00edcios (`seed-demo.json`), reescrever\u00e1 os `README.md` de cada projeto e publicar\u00e1 seus reposit\u00f3rios com seguran\u00e7a total no GitHub.\n\n---\n\n```markdown\nAtue como Engenheiro DevSecOps S\u00eanior, Arquiteto de Software Principal e Especialista em Git/GitHub CLI (`gh`).\nSua miss\u00e3o \u00e9 executar uma **Auditoria de Seguran\u00e7a, Sanitiza\u00e7\u00e3o de Hist\u00f3rico Git, Padroniza\u00e7\u00e3o de Documenta\u00e7\u00e3o e Publica\u00e7\u00e3o Segura (Public)** em todos os meus reposit\u00f3rios locais e remotos do GitHub, al\u00e9m de sincronizar meu Portf\u00f3lio (`portfolio`) e meu Perfil (`wallacextreme`).\n\nSiga RIGOROSAMENTE este protocolo em 6 Fases, validando cada etapa no terminal antes de avan\u00e7ar. NUNCA fa\u00e7a push de arquivos contendo chaves reais, senhas, CPFs, nomes reais de funcion\u00e1rios ou dumps financeiros reais.\n\n---\n\n### FASE 1 \u2014 UNIFICA\u00c7\u00c3O DE CONTA GITHUB E DIAGN\u00d3STICO DE REPOSIT\u00d3RIOS\n1. Execute `gh auth status` e `git config --list` para verificar qual conta est\u00e1 autenticada no terminal (`wallacextreme` vs `wallacextreme007`).\n2. A conta oficial p\u00fablica do meu curr\u00edculo e portf\u00f3lio \u00e9 **`wallacextreme`** (`https://github.com/wallacextreme`).\n   - Se houver reposit\u00f3rios criados sob `wallacextreme007`, liste-os com `gh repo list wallacextreme007 --limit 100` e transfira ou espelhe os projetos principais para `wallacextreme`.\n3. Liste todos os reposit\u00f3rios locais nas minhas pastas de trabalho (incluindo `CONTROLE DE PAGAMENTOS PRO`, `Gerenciador De Produtos` / `Gest\u00e3oPro`, `Cat\u00e1logo Inteligente de Balc\u00e3o`, `MeuCaixaHospedado`, `sistema-controle-vales`, `controle-entregas-friburgo`, `etiquetapro`, `FiscalFlow`, `pizzaria-platform`, `Site Tucano`, `cinzas-do-eter`, `Arcane-Lore` e `portfolio`).\n\n---\n\n### FASE 2 \u2014 AUDITORIA DEVSECOPS IMPLAC\u00c1VEL (CA\u00c7A A CREDENCIAIS E DADOS SENS\u00cdVEIS)\nAntes de tornar qualquer reposit\u00f3rio `Public`, execute uma varredura completa no c\u00f3digo-fonte e no hist\u00f3rico de commits (`git log -p -S`) procurando por:\n1. **Chaves de API e Tokens:**\n   - Chaves Firebase (`apiKey`, `AIza...`, `projectId`, `databaseURL` apontando para produ\u00e7\u00e3o).\n   - Chaves Supabase (`SUPABASE_SERVICE_ROLE_KEY`, `eyJ...`).\n   - Chaves de IA em arquivos de configura\u00e7\u00e3o (ex.: `config_roo_code_settings.json` contendo `geminiApiKey`, `moonshotApiKey`, `deepSeekApiKey`, `nvapi-`). **JAMAIS versione arquivos de configura\u00e7\u00e3o de agentes de IA.**\n2. **Dados Comerciais e Pessoais Reais (LGPD):**\n   - Arquivos de backup JSON reais (ex.: `backup_caixa_completo.json`, dumps do IndexedDB/SQLite com nomes reais de vendedores como Maisson, Alziro, Luiz, ou dados reais de clientes/fornecedores e notas fiscais com CNPJ/CPF privado).\n   - Senhas administrativas hardcoded no c\u00f3digo front-end (ex.: fun\u00e7\u00f5es `checarSenha()` ou `realizarLoginInicial()` com senhas reais da loja).\n3. **Bin\u00e1rios Pesados de Build no Git:**\n   - Pastas `node_modules/`, `src-tauri/target/`, instaladores `.exe` e `.msi` soltos na \u00e1rvore de commits (os instaladores `.exe` e `.msi` devem ser publicados exclusivamente na aba **GitHub Releases** via `gh release create`, e nunca comitados dentro da branch `main`).\n\n---\n\n### FASE 3 \u2014 CRIA\u00c7\u00c3O DE `.env.example`, `.gitignore` BLINDADO E DADOS FICT\u00cdCIOS (`SEED / DEMO MODE`)\nPara cada projeto auditado (especialmente `controle-de-pagamentos-pro`, `gerenciador-de-produtos` / `Gest\u00e3oPro`, `sistema-controle-vales`, `MeuCaixaHospedado`, `pizzaria-platform` e `catalogo-balcao-pro`):\n\n1. **Padronize o `.gitignore`:**\n   Garanta que `.gitignore` bloqueie estritamente:\n   ```gitignore\n   node_modules/\n   dist/\n   src-tauri/target/\n   .env\n   .env.*\n   !.env.example\n   *.local\n   *backup*.json\n   *settings*.json\n   *.sqlite\n   *.db\n   *.exe\n   *.msi\n   ```\n2. **Crie um arquivo `.env.example` documentado:**\n   Extraia todas as vari\u00e1veis de ambiente ou configura\u00e7\u00f5es de nuvem para vari\u00e1veis `VITE_*` / `NEXT_PUBLIC_*` e crie o `.env.example` na raiz do reposit\u00f3rio:\n   ```env\n   # Exemplo de Configura\u00e7\u00e3o de Ambiente (Copie para .env.local)\n   VITE_APP_MODE=demo\n   VITE_FIREBASE_API_KEY=sua_api_key_aqui\n   VITE_FIREBASE_AUTH_DOMAIN=seu-projeto.firebaseapp.com\n   VITE_FIREBASE_PROJECT_ID=seu-projeto-id\n   VITE_FIREBASE_DATABASE_URL=https://seu-projeto-default-rtdb.firebaseio.com\n   VITE_SUPABASE_URL=https://seu-projeto.supabase.co\n   VITE_SUPABASE_ANON_KEY=sua_chave_anon_publica_aqui\n   ```\n3. **Injete Modo de Demonstra\u00e7\u00e3o (`Demo Seed Data`) para Recrutadores:**\n   - Nos sistemas Offline-First (`Controle de Pagamentos PRO`, `Gest\u00e3oPro`, `Tucano Cloud`, `Controle de Entregas`, `Cat\u00e1logo de Balc\u00e3o` e `MeuCaixa`), crie um arquivo `src/data/demo-seed.json` (ou fun\u00e7\u00e3o `carregarDadosDemonstracao()`) com **dados 100% fict\u00edcios e realistas** (ex.: Empresa Demo \"Auto Pe\u00e7as Horizonte LTDA\", vendedores fict\u00edcios \"Carlos Silva\" e \"Ana Souza\", 15 produtos automotivos de exemplo, 8 lan\u00e7amentos financeiros simulados e senha de teste vis\u00edvel na tela de login da demo: `Demo: admin / 1234`).\n   - Assim, quando o recrutador abrir a **Demo Online no GitHub Pages**, o sistema j\u00e1 carregar\u00e1 populado com gr\u00e1ficos, tabelas e cards prontos para testar com 1 clique!\n\n---\n\n### FASE 4 \u2014 REESCRITA DE HIST\u00d3RICO GIT (EXPURGO DE CHAVES PRIVADAS)\nSe qualquer reposit\u00f3rio local tiver tido chaves privadas, backups JSON reais ou a pasta `src-tauri/target` comitados em commits passados:\n1. N\u00c3O fa\u00e7a apenas `git rm` (pois o segredo continuaria vis\u00edvel no hist\u00f3rico de commits antigos).\n2. Crie uma branch \u00f3rf\u00e3 limpa a partir do estado atual j\u00e1 sanitizado:\n   ```bash\n   git checkout --orphan main-sanitized\n   git add .\n   git commit -m \"feat: release inicial p\u00fablica com arquitetura offline-first, demo seed e documenta\u00e7\u00e3o t\u00e9cnica\"\n   git branch -M main-sanitized main\n   ```\n3. Verifique com `git status` e `git log --stat` que nenhum arquivo sens\u00edvel ou bin\u00e1rio gigante (`.exe`/`.msi`/`target`) est\u00e1 presente no commit.\n\n---\n\n### FASE 5 \u2014 DOCUMENTA\u00c7\u00c3O PADR\u00c3O OURO (`README.md`) EM CADA REPOSIT\u00d3RIO\nSubstitua qualquer `README.md` gen\u00e9rico (como o boilerplate do `bun init` no `gerenciador-de-produtos`) por um `README.md` t\u00e9cnico de n\u00edvel s\u00eanior contendo:\n- Badges de stack (TypeScript, Tauri v2, React/Next.js, PWA, Vitest).\n- Link em destaque para a **Demo Interativa no GitHub Pages**.\n- Vis\u00e3o Geral do Produto e Problema de Neg\u00f3cio Resolvido.\n- Diagrama de Arquitetura (Mermaid.js) explicando o fluxo Offline-First / IndexedDB / SQLite / Outbox Sync.\n- Instru\u00e7\u00f5es claras de execu\u00e7\u00e3o local (`bun install`, `bun run dev`, `bun test`, `bun run tauri build`).\n- Se\u00e7\u00e3o de Qualidade e Testes Automatizados (com o output real da su\u00edte `vitest` / `bun test`).\n\n---\n\n### FASE 6 \u2014 PUBLICA\u00c7\u00c3O (`PUBLIC`), GITHUB PAGES E GITHUB RELEASES\n1. **Mudar Visibilidade para Public e Subir C\u00f3digo Limpo:**\n   Para cada reposit\u00f3rio principal sanitizado:\n   ```bash\n   gh repo edit wallacextreme/<nome-do-repo> --visibility public --accept-visibility-change-consequences\n   git push -u origin main --force\n   ```\n2. **Ativar GitHub Pages para as Demos Online:**\n   Configure o deploy autom\u00e1tico para `gh-pages` (ou pasta `/docs` / GitHub Actions) em:\n   - `FiscalFlow` -> `https://wallacextreme.github.io/FiscalFlow/`\n   - `gerenciador-de-produtos` (`Gest\u00e3oPro`) -> `https://wallacextreme.github.io/gerenciador-de-produtos/`\n   - `controle-de-pagamentos-pro` -> `https://wallacextreme.github.io/controle-de-pagamentos-pro/`\n   - `sistema-controle-vales` -> `https://wallacextreme.github.io/sistema-controle-vales/`\n   - `controle-entregas-friburgo` -> `https://wallacextreme.github.io/controle-entregas-friburgo/`\n   - `etiquetapro` -> `https://wallacextreme.github.io/etiquetapro/`\n   - `cinzas-do-eter` -> `https://wallacextreme.github.io/cinzas-do-eter/`\n3. **Publicar Instaladores `.exe` e `.msi` via GitHub Releases:**\n   Nos projetos Tauri (`FiscalFlow`, `Gest\u00e3oPro`, `Controle de Pagamentos PRO`, `Tucano Cloud`), anexe os instaladores Windows compilados em uma Release oficial:\n   ```bash\n   gh release create v1.3.0 ./ instalador_x64.msi ./instalador_x64-setup.exe --title \"v1.3.0 - Build Nativa Windows (Tauri v2)\" --notes \"Instaladores oficiais .MSI e .EXE para Windows x64.\"\n   ```\n4. **Fixar os 6 Melhores Reposit\u00f3rios no Perfil (`Pinned Repos`):**\n   - `FiscalFlow`\n   - `gerenciador-de-produtos` (Gest\u00e3oPro ERP)\n   - `pizzaria-platform`\n   - `catalogo-balcao-pro`\n   - `sistema-controle-vales`\n   - `controle-de-pagamentos-pro`\n5. **Relat\u00f3rio Final de Auditoria:**\n   Ao concluir, exiba uma tabela resumo confirmando: Nome do Reposit\u00f3rio, Status de Sanitiza\u00e7\u00e3o (0 segredos expostos), Status de Visibilidade (`PUBLIC`), URL da Demo Ativa (HTTP 200) e Quantidade de Testes Passando.\n```\n"
-            },
-            curriculo: {
-                title: "📄 Currículo Completo em Markdown (Otimizado para ATS & GitHub)",
-                desc: "Pronto para salvar no seu repositório de currículo ou converter para PDF.",
-                content: "# Wallace de Paula Soares\n**Desenvolvedor Full Stack & Engenheiro de Software (TypeScript | React & Next.js | Tauri & Rust | PWA Offline-First)**\n\n\ud83d\udccd Nova Friburgo / Rio de Janeiro - RJ, Brasil *(Dispon\u00edvel para atua\u00e7\u00e3o Remota ou H\u00edbrida)*  \n\ud83d\udce7 **E-mail:** [wallacextreme@hotmail.com](mailto:wallacextreme@hotmail.com) | \ud83d\udcf1 **WhatsApp/Tel:** (22) 99200-4410  \n\ud83c\udf10 **Portf\u00f3lio Online:** [wallacextreme.github.io/portfolio](https://wallacextreme.github.io/portfolio/)  \n\ud83d\udc19 **GitHub:** [github.com/wallacextreme](https://github.com/wallacextreme) | \ud83d\udcbc **LinkedIn:** [linkedin.com/in/wallacextreme](https://linkedin.com/in/wallacextreme)  \n\n---\n\n## \ud83c\udfaf Resumo Profissional\n\nEngenheiro de Software e Desenvolvedor Full Stack graduado em **An\u00e1lise e Desenvolvimento de Sistemas (Est\u00e1cio)**, especializado na arquitetura e entrega de aplica\u00e7\u00f5es web de alta resili\u00eancia (**React 19, Next.js 15, TypeScript Strict**), sistemas **Offline-First (PWA, Service Workers, IndexedDB, SQLite)** e aplica\u00e7\u00f5es **Desktop nativas para Windows (Tauri v2 / Rust)**. Combino rigor t\u00e9cnico em **Clean Architecture**, sincroniza\u00e7\u00e3o transacional distribu\u00edda (**Outbox Pattern / Last-Write-Wins**), seguran\u00e7a de dados (**PostgreSQL RLS / RBAC**) e **+1.600 testes automatizados (1.102 no GestãoPro, 370 no Cinzas do Éter, 126 no FiscalFlow)** com 20 anos de dom\u00ednio pr\u00e1tico em regras de neg\u00f3cio de varejo, log\u00edstica, PDV e conformidade fiscal brasileira (NF-e, SPED, SEFAZ).\n\n---\n\n## \ud83d\udee0\ufe0f Compet\u00eancias T\u00e9cnicas (ATS Keywords)\n\n- **Frontend & UI Moderna:** TypeScript (Strict Mode), JavaScript (ES6+), React 19, Next.js 15 (App Router, Server Actions), HTML5 Sem\u00e2ntico, CSS3, Tailwind CSS v4, CSS Paged Media (`@page` para impress\u00e3o t\u00e9cnica), Bootstrap 5.\n- **Arquitetura Offline-First & PWA:** Progressive Web Apps (PWA), Service Workers (Cache-First, Network-First, Stale-While-Revalidate), Cache Storage API, IndexedDB, SQLite 3, WebAssembly (`sql.js`), Sincroniza\u00e7\u00e3o em Nuvem (Outbox Pattern, LWW Conflict Resolution).\n- **Backend, Cloud & Bancos de Dados:** Node.js, Bun, Express.js, Python (Automa\u00e7\u00e3o, Engenharia Reversa de Dados, PyMuPDF/Pillow), Supabase (PostgreSQL, Auth RBAC, Row Level Security - RLS, Storage, Realtime WebSockets), Firebase (Firestore REST API, Realtime Database), PHP (MVC/PDO), REST APIs, Valida\u00e7\u00e3o Zod.\n- **Desktop Nativo & Game Engineering:** Tauri v2 (Rust backend, empacotamento nativo Windows `.msi` e `.exe` via NSIS/WiX), Phaser 3 (Arquitetura modular 2D, Entity & Dialogue Systems).\n- **Qualidade de Software, DevOps & Governan\u00e7a:** Vitest, Jest, Bun Test, Cobertura V8, Git, GitHub Actions (CI/CD), Clean Architecture, SOLID, ISO/IEC 25010:2023, ISO 9001:2026, Engenharia de Software Assistida por IA.\n\n---\n\n## \ud83d\udcbc Experi\u00eancia Profissional\n\n### **Desenvolvedor de Software Full Stack & Arquiteto de Sistemas**\n*Projetos Comerciais, Sistemas em Produ\u00e7\u00e3o & Open Source* | **Jan 2022 \u2013 Presente**\n- **Engenharia de ERPs e Sistemas Fiscais Desktop/PWA:** Concep\u00e7\u00e3o e desenvolvimento de aplica\u00e7\u00f5es comerciais cr\u00edticas empacotadas com **Tauri v2 (Rust)** e **PWA Offline-First**, operando com lat\u00eancia zero sobre **SQLite** e **IndexedDB** em ambientes de balc\u00e3o e retaguarda.\n- **Sincroniza\u00e7\u00e3o Distribu\u00edda e Integridade Financeira:** Implementa\u00e7\u00e3o de motor de sincroniza\u00e7\u00e3o em nuvem (**Outbox Pattern** com resolu\u00e7\u00e3o determin\u00edstica de conflitos *Last Write Wins*), controle de concorr\u00eancia at\u00f4mica para credi\u00e1rio e c\u00e1lculos monet\u00e1rios em centavos inteiros (`BigInt` / inteiros) eliminando erros de ponto flutuante.\n- **Engenharia Reversa e Processamento de Dados:** Constru\u00e7\u00e3o de pipelines automatizados em **Python (`PyMuPDF` / `Pillow`)** para extra\u00e7\u00e3o de objetos gr\u00e1ficos `XREF`, recomposi\u00e7\u00e3o de m\u00e1scaras `SMask` e estrutura\u00e7\u00e3o de cat\u00e1logos t\u00e9cnicos com mais de 1.000 SKUs e busca local sub-50ms.\n- **Desenvolvimento Full-Stack Realtime:** Entrega de plataformas web com **Next.js 15, React 19 e Supabase**, integrando quadros Kanban sincronizados via WebSockets, isolamento de seguran\u00e7a com **Row Level Security (RLS)** no PostgreSQL e su\u00edtes de testes automatizados (**+170 testes unit\u00e1rios e de integra\u00e7\u00e3o no Vitest/Bun**).\n\n### **TecnoService \u2014 Suporte T\u00e9cnico & Infraestrutura de TI**\n*Fundador & Especialista em Infraestrutura e Sistemas Comerciais* | **Nova Friburgo, RJ**\n- Planejamento, montagem e manuten\u00e7\u00e3o de esta\u00e7\u00f5es de trabalho e infraestrutura de redes locais (LAN/WLAN), roteamento e cabeamento estruturado para empresas.\n- Implanta\u00e7\u00e3o, otimiza\u00e7\u00e3o e suporte de sistemas de Ponto de Venda (PDV), automa\u00e7\u00e3o comercial, rotinas de backup/conting\u00eancia criptografada e continuidade de neg\u00f3cios.\n\n### **Especialista em Opera\u00e7\u00f5es Comerciais, Log\u00edstica & Gest\u00e3o de Estoque (Setor Automotivo)**\n*T H Felipe Auto Pe\u00e7as, Marka Auto Pe\u00e7as, Servel GM & Varejo Especializado* | **2002 \u2013 2024**\n- Mais de 20 anos de experi\u00eancia pr\u00e1tica em gest\u00e3o de estoque (+10.000 SKUs), convers\u00e3o de cat\u00e1logos de c\u00f3digos OEM/equival\u00eancias, faturamento, concilia\u00e7\u00e3o de caixa, log\u00edstica de expedi\u00e7\u00e3o e negocia\u00e7\u00e3o comercial \u2014 base de dom\u00ednio que fundamenta a cria\u00e7\u00e3o dos sistemas verticais de ERP, fiscal e log\u00edstica do meu portf\u00f3lio.\n\n---\n\n## \ud83d\ude80 Projetos em Destaque (C\u00f3digo & Demos Audit\u00e1veis)\n\n### 1. **FiscalFlow \u2014 Gest\u00e3o & Auditoria Fiscal Eletr\u00f4nica**\n- **Stack:** Tauri v2 (Rust), TypeScript (Strict), SQLite 3, WebAssembly (`sql.js`), Tailwind CSS, Vitest.\n- **Links:** [Reposit\u00f3rio GitHub](https://github.com/wallacextreme/FiscalFlow) | [Demo Online](https://wallacextreme.github.io/FiscalFlow/)\n- Sistema 100% Offline-First com persist\u00eancia h\u00edbrida (SQLite nativo via Tauri SQL Plugin e fallback WebAssembly no navegador).\n- Motor de parsing e auditoria para **NF-e 4.00, NFC-e, NFS-e (Padr\u00e3o Nacional e ABRASF 2.04), CT-e 4.00 e SPED Fiscal** (EFD ICMS/IPI com Registros 0000, 0100, C100 e E110).\n- Valida\u00e7\u00e3o oficial do **M\u00f3dulo 11 da SEFAZ** para chaves de 44 d\u00edgitos, desduplica\u00e7\u00e3o criptogr\u00e1fica via **SHA-256** e exporta\u00e7\u00e3o cont\u00e1bil brasileira (CSV com UTF-8 BOM e pacotes ZIP com manifesto).\n- **Qualidade:** 126 testes automatizados passando no Vitest (cobertura V8) e documenta\u00e7\u00e3o alinhada \u00e0s normas **ISO/IEC 25010:2023** e **ISO 9001:2026**.\n\n### 2. **Gest\u00e3oPro \u2014 ERP Comercial, PDV & Sync Engine (v1.13.0)**\n- **Stack:** Tauri v2 (.exe/.msi), JavaScript ES6+ / TypeScript, Vite 8, Tailwind CSS v4, IndexedDB, Firebase Firestore REST API, Bun Test.\n- **Links:** [Reposit\u00f3rio GitHub](https://github.com/wallacextreme/gerenciador-de-produtos) | [Demo Online](https://wallacextreme.github.io/gerenciador-de-produtos/)\n- ERP completo estruturado em 13 m\u00f3dulos: Cat\u00e1logo de Produtos, Controle de Estoque, Frente de Caixa (PDV), Compras, Cota\u00e7\u00f5es Comparativas por Fornecedor, Dashboard Anal\u00edtico e Relat\u00f3rios de Impress\u00e3o.\n- Arquitetura de sincroniza\u00e7\u00e3o em nuvem baseada no **Outbox Pattern (`SyncEngine`)**, com coalesc\u00eancia inteligente de fila, escuta reativa via `EventBus` e resolu\u00e7\u00e3o de conflitos **Last Write Wins (LWW)**.\n- **Qualidade:** **171 testes automatizados passando (0 falhas)** distribu\u00eddos em 14 su\u00edtes de teste (`bun test`).\n\n### 3. **Cat\u00e1logo Inteligente de Balc\u00e3o \u2014 Engenharia Reversa de PDFs Automotivos**\n- **Stack:** Python (`PyMuPDF` / `fitz`, `Pillow`), TypeScript Strict, Bun, Vite, Tailwind CSS, IndexedDB, PWA, Tauri v2.\n- **Links:** [Reposit\u00f3rio GitHub](https://github.com/wallacextreme/catalogo-balcao-pro)\n- Pipeline em Python para engenharia reversa de cat\u00e1logos PDF complexos: extra\u00e7\u00e3o direta via `XREF`, recomposi\u00e7\u00e3o de transpar\u00eancias `SMask`, convers\u00e3o `CMYK -> sRGB`, costura de imagens fatiadas (`stitching`) e exporta\u00e7\u00e3o otimizada em `.webp`.\n- Motor de busca local **sub-50ms** para mais de 1.000 produtos, expans\u00e3o inteligente de c\u00f3digos OEM/hom\u00f3glifos, mapeamento de 4 tipos de v\u00ednculos entre pe\u00e7as com sugest\u00e3o transitiva *cross-brand* e Modo Privacidade de Balc\u00e3o.\n\n### 4. **Plataforma de Pizzaria Full-Stack & Kanban Realtime**\n- **Stack:** Next.js 15, React 19, TypeScript, Supabase (PostgreSQL, Auth, RLS, Storage, Realtime), Tailwind CSS, Vitest.\n- **Links:** [Reposit\u00f3rio GitHub](https://github.com/wallacextreme/pizzaria-platform)\n- Card\u00e1pio digital interativo (com montagem de pizza meio a meio) integrado a um painel administrativo com Kanban de cozinha sincronizado em tempo real via WebSockets e alertas sonoros.\n- Seguran\u00e7a no banco de dados via **Row Level Security (RLS)** granular no PostgreSQL, c\u00e1lculos monet\u00e1rios estritos em centavos inteiros no servidor e compress\u00e3o din\u00e2mica de fotos para WebP via Canvas API.\n\n### 5. **Tucano Cloud \u2014 Vales de Cr\u00e9dito & Credi\u00e1rio Comercial**\n- **Stack:** Tauri v2 (Rust), Firebase Realtime Database, PWA Offline-First, JavaScript ES6+, Tailwind CSS, Instaladores `.exe` / `.msi`.\n- **Links:** [Reposit\u00f3rio GitHub](https://github.com/wallacextreme/sistema-controle-vales) | [Demo Online](https://wallacextreme.github.io/sistema-controle-vales/)\n- Controle transacional de vales e notas a prazo com gera\u00e7\u00e3o de sequ\u00eancias at\u00f4micas (`NP-XXXXXX` e `REC-XXXXXX`), blindagem de concorr\u00eancia contra baixas duplicadas, limites de cr\u00e9dito em tempo real e cobran\u00e7a automatizada via WhatsApp.\n\n### 6. **Controle de Pagamentos PRO \u2014 Concilia\u00e7\u00e3o Multi-Bancos (v1.3.0)**\n- **Stack:** Tauri v2 (.exe/.msi), PWA Offline-First, Service Worker, IndexedDB, SQLite, Tailwind CSS.\n- **Links:** [Reposit\u00f3rio GitHub](https://github.com/wallacextreme/controle-de-pagamentos-pro) | [Demo Online](https://wallacextreme.github.io/controle-de-pagamentos-pro/)\n- Gest\u00e3o financeira multi-bancos com painel comparativo global, motor de relat\u00f3rios paisagem A4 com oculta\u00e7\u00e3o autom\u00e1tica de carteiras vazias, backup/restaura\u00e7\u00e3o JSON e exporta\u00e7\u00e3o anal\u00edtica para CSV.\n\n### 7. **Controle de Entregas \u2014 Log\u00edstica Local de Autope\u00e7as**\n- **Stack:** JavaScript Vanilla (ES6+), IndexedDB v2, PWA Offline-First, Service Worker, State Machine.\n- **Links:** [Reposit\u00f3rio GitHub](https://github.com/wallacextreme/controle-entregas-friburgo) | [Demo Online](https://wallacextreme.github.io/controle-entregas-friburgo/)\n- Gerenciamento de expedi\u00e7\u00e3o, despacho de entregadores e acerto financeiro l\u00edquido di\u00e1rio com Kanban de 5 colunas (drag & drop nativo), preven\u00e7\u00e3o de troco fantasma e integra\u00e7\u00e3o de 1 toque com Waze, Google Maps e WhatsApp.\n\n### 8. **EtiquetaPro \u2014 Diagramador F\u00edsico de Etiquetas PWA**\n- **Stack:** JavaScript Vanilla (ES6+), PWA, Service Worker, Cache Storage API, CSS Paged Media (`@page`), IndexedDB.\n- **Links:** [Reposit\u00f3rio GitHub](https://github.com/wallacextreme/etiquetapro) | [Demo Online](https://wallacextreme.github.io/etiquetapro/)\n- Motor de diagrama\u00e7\u00e3o f\u00edsica milim\u00e9trica (`mm`) homologado para **21 gabaritos Pimaco** (A4 e Carta), operando 100% offline sem depend\u00eancia de frameworks externos.\n\n### 9. **Cinzas do \u00c9ter (JRPG 16-Bit em Phaser 3)** & **Portal Tucano Auto Pe\u00e7as (SEO Local)**\n- **Cinzas do \u00c9ter:** Arquitetura modular de jogos 2D em **Phaser 3, TypeScript, Vite, Bun e Vitest**, com *Entity System* desacoplado, *Map Layer Manager* e *Dialogue System* testados via Vitest. ([Reposit\u00f3rio](https://github.com/wallacextreme/cinzas-do-eter))\n- **Portal Tucano Auto Pe\u00e7as:** Portal comercial de alta convers\u00e3o em Tailwind CSS com SEO t\u00e9cnico avan\u00e7ado via dados estruturados **Schema.org JSON-LD** (`AutoPartsStore`, `FAQPage`, `BreadcrumbList`). ([Reposit\u00f3rio](https://github.com/wallacextreme/site-tucano))\n\n---\n\n## \ud83c\udf93 Forma\u00e7\u00e3o Acad\u00eamica\n\n- **Tecn\u00f3logo em An\u00e1lise e Desenvolvimento de Sistemas**  \n  **Universidade Est\u00e1cio de S\u00e1** \u2014 *Conclu\u00eddo em Junho/2023 (Cola\u00e7\u00e3o de Grau: 14/07/2023)*  \n  * Diploma Digital Registrado (MEC) \u2014 C\u00f3digo de Autenticidade: `163.163.80fed31e1b42`  \n  * [Verificar Diploma Oficial no Portal da Est\u00e1cio](https://consultadiploma.estacio.br/diploma/163.163.80fed31e1b42)\n\n---\n\n## \ud83d\udcda Forma\u00e7\u00e3o Complementar & Idiomas\n\n- **Especializa\u00e7\u00f5es T\u00e9cnicas:** React.js 19 & Next.js 15, Python 3 Avan\u00e7ado, C# Programa\u00e7\u00e3o Orientada a Objetos e Desenvolvimento Web Full Stack.\n- **Idiomas:** Portugu\u00eas (Nativo) | Ingl\u00eas (T\u00e9cnico para leitura de documenta\u00e7\u00f5es, especifica\u00e7\u00f5es ISO e c\u00f3digo).\n"
-            },
-            readme: {
-                title: "🐙 README.md Especial de Perfil (Repositório wallacextreme/wallacextreme)",
-                desc: "Coloque este arquivo na raiz do repositório wallacextreme/wallacextreme para criar sua vitrine principal no GitHub.",
-                content: "# Ol\u00e1, eu sou Wallace de Paula Soares \ud83d\udc4b\n### **Desenvolvedor Full Stack & Engenheiro de Software**\n*Arquitetura Offline-First \u2022 PWA \u2022 Tauri v2 (Rust) \u2022 Next.js 15 & React 19 \u2022 TypeScript Strict*\n\n[![Portf\u00f3lio](https://img.shields.io/badge/\ud83c\udf10_Portf\u00f3lio_Interativo-2563eb?style=for-the-badge)](https://wallacextreme.github.io/portfolio/)\n[![Modo Solo Leveling](https://img.shields.io/badge/\ud83c\udfae_Portf\u00f3lio_Hunter_Rank_S-7c3aed?style=for-the-badge)](https://wallacextreme.github.io/portfolio/sololeveling.html)\n[![Curr\u00edculo ATS](https://img.shields.io/badge/\ud83d\udcc4_Curr\u00edculo_Online_(PDF)-10b981?style=for-the-badge)](https://wallacextreme.github.io/portfolio/curriculo.html)\n[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/wallacextreme)\n[![E-mail](https://img.shields.io/badge/E--mail-D14836?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:wallacextreme@hotmail.com)\n\n---\n\n## \u26a1 Sobre Mim\n\n- \ud83c\udf93 **Graduado em An\u00e1lise e Desenvolvimento de Sistemas** pela Universidade Est\u00e1cio de S\u00e1 ([Diploma Digital Verific\u00e1vel: `163.163.80fed31e1b42`](https://consultadiploma.estacio.br/diploma/163.163.80fed31e1b42)).\n- \ud83c\udfd7\ufe0f Especialista em transformar regras de neg\u00f3cio complexas (fiscal, ERP, PDV, credi\u00e1rio, log\u00edstica e cat\u00e1logos t\u00e9cnicos) em sistemas **Offline-First** de lat\u00eancia zero para Web (**PWA**) e Desktop (**Tauri v2 / Windows `.msi` & `.exe`**).\n- \ud83e\uddea Foco estrito em qualidade de engenharia: **+1.600 testes automatizados** somados em projetos reais (Vitest / Bun Test), tipagem estrita em TypeScript, c\u00e1lculos monet\u00e1rios em centavos inteiros e conformidade **ISO/IEC 25010:2023**.\n\n---\n\n## \ud83c\udfc6 Matriz de Projetos em Produ\u00e7\u00e3o & Open Source\n\n| Projeto | Arquitetura & Stack Principal | Qualidade & Destaques T\u00e9cnicos | Links |\n| :--- | :--- | :--- | :---: |\n| **\ud83e\uddfe FiscalFlow** | `Tauri 2 (Rust)` `TypeScript` `SQLite` `WASM` `Vitest` | Parser NF-e/NFC-e/NFS-e/CT-e/SPED, M\u00f3dulo 11 SEFAZ, SHA-256, **126 testes (100% pass)**, ISO 25010 | [C\u00f3digo](https://github.com/wallacextreme/FiscalFlow) \u2022 [Demo](https://wallacextreme.github.io/FiscalFlow/) |\n| **\ud83d\udce6 Gest\u00e3oPro ERP** | `Tauri 2` `Vite 8` `Tailwind v4` `IndexedDB` `Firebase` | ERP em 13 m\u00f3dulos, PDV, Estoque, Cota\u00e7\u00f5es, **Sync Engine (Outbox Pattern + LWW)**, **171 testes** | [C\u00f3digo](https://github.com/wallacextreme/gerenciador-de-produtos) \u2022 [Demo](https://wallacextreme.github.io/gerenciador-de-produtos/) |\n| **\ud83d\udd0d Cat\u00e1logo Balc\u00e3o XREF** | `Python (PyMuPDF)` `TypeScript` `Tauri 2` `IndexedDB` | Engenharia reversa de PDFs (`XREF`/`SMask` -> WebP), busca sub-50ms, 4 v\u00ednculos cross-brand | [C\u00f3digo](https://github.com/wallacextreme/catalogo-balcao-pro) |\n| **\ud83c\udf55 Pizzaria Full-Stack** | `Next.js 15` `React 19` `TypeScript` `Supabase` `Vitest` | Kanban de cozinha Realtime (WebSocket), PostgreSQL RLS granular, centavos inteiros, WebP Canvas | [C\u00f3digo](https://github.com/wallacextreme/pizzaria-platform) |\n| **\ud83d\udcb3 Tucano Cloud (Vales)** | `Tauri 2` `Firebase RTDB` `PWA Offline` `Tailwind` | Sequ\u00eancias at\u00f4micas (`NP`/`REC`), blindagem de concorr\u00eancia transacional, cobran\u00e7a WhatsApp | [C\u00f3digo](https://github.com/wallacextreme/sistema-controle-vales) \u2022 [Demo](https://wallacextreme.github.io/sistema-controle-vales/) |\n| **\ud83d\udcb0 Pagamentos PRO** | `Tauri 2` `PWA` `IndexedDB` `SQLite` `Service Worker` | Concilia\u00e7\u00e3o multi-bancos, relat\u00f3rios paisagem A4 inteligentes, backup JSON e exporta\u00e7\u00e3o CSV | [C\u00f3digo](https://github.com/wallacextreme/controle-de-pagamentos-pro) \u2022 [Demo](https://wallacextreme.github.io/controle-de-pagamentos-pro/) |\n| **\ud83c\udfcd\ufe0f Controle de Entregas** | `JS ES6+` `IndexedDB v2` `PWA` `State Machine` | Kanban log\u00edstico 5 colunas (Drag & Drop), acerto l\u00edquido di\u00e1rio, preven\u00e7\u00e3o de troco fantasma | [C\u00f3digo](https://github.com/wallacextreme/controle-entregas-friburgo) \u2022 [Demo](https://wallacextreme.github.io/controle-entregas-friburgo/) |\n| **\ud83c\udff7\ufe0f EtiquetaPro PWA** | `JS Vanilla` `PWA` `CSS Paged Media` `Service Worker` | Diagrama\u00e7\u00e3o f\u00edsica milim\u00e9trica (`mm`) homologada para 21 gabaritos Pimaco (A4/Carta) | [C\u00f3digo](https://github.com/wallacextreme/etiquetapro) \u2022 [Demo](https://wallacextreme.github.io/etiquetapro/) |\n| **\u2694\ufe0f Cinzas do \u00c9ter** | `Phaser 3` `TypeScript` `Vite` `Bun` `Vitest` | JRPG 16-Bit com Entity System desacoplado, Map Layer Manager e Dialogue System testados | [C\u00f3digo](https://github.com/wallacextreme/cinzas-do-eter) |\n\n---\n\n## \ud83d\udee0\ufe0f Stack Tecnol\u00f3gica\n\n- **Frontend & Mobile/PWA:** TypeScript, JavaScript ES6+, React 19, Next.js 15, Tailwind CSS, HTML5, CSS3 Paged Media, Service Workers, IndexedDB.\n- **Backend, Dados & Automa\u00e7\u00e3o:** Node.js, Bun, Python (PyMuPDF, Pillow), Supabase (PostgreSQL, Auth, RLS, Realtime), Firebase (Firestore, RTDB), SQLite, WebAssembly (`sql.js`), PHP.\n- **Desktop, Games & QA:** Tauri v2 (Rust / Windows `.exe` & `.msi`), Phaser 3, Vite, Vitest, Jest, Git & GitHub Actions.\n"
-            },
-            env: {
-                title: "🔒 Template Universal .env.example",
-                desc: "Adicione na raiz dos seus projetos Firebase, Supabase e Tauri antes de torná-los públicos.",
-                content: "# ============================================================================\n# ARQUIVO DE EXEMPLO DE VARI\u00c1VEIS DE AMBIENTE (.env.example)\n# Instru\u00e7\u00f5es: Copie este arquivo para `.env.local` e preencha com suas chaves.\n# NUNCA fa\u00e7a commit do arquivo `.env` ou `.env.local` no Git!\n# ============================================================================\n\n# Modo de Execu\u00e7\u00e3o (\"demo\" carrega dados fict\u00edcios automaticamente no navegador)\nVITE_APP_MODE=demo\nNEXT_PUBLIC_APP_MODE=demo\n\n# ----------------------------------------------------------------------------\n# SUPABASE (Plataforma de Pizzaria Full-Stack / Projetos PostgreSQL RLS)\n# ----------------------------------------------------------------------------\nNEXT_PUBLIC_SUPABASE_URL=https://seu-projeto-id.supabase.co\nNEXT_PUBLIC_SUPABASE_ANON_KEY=sua_chave_publica_anon_aqui\n# Chave privada de administra\u00e7\u00e3o (apenas backend / NUNCA expor no frontend)\nSUPABASE_SERVICE_ROLE_KEY=sua_service_role_key_secreta_aqui\n\n# ----------------------------------------------------------------------------\n# FIREBASE (Gest\u00e3oPro Sync Engine / Tucano Cloud / MeuCaixa)\n# ----------------------------------------------------------------------------\nVITE_FIREBASE_API_KEY=sua_firebase_api_key_aqui\nVITE_FIREBASE_AUTH_DOMAIN=seu-projeto.firebaseapp.com\nVITE_FIREBASE_DATABASE_URL=https://seu-projeto-default-rtdb.firebaseio.com\nVITE_FIREBASE_PROJECT_ID=seu-projeto-id\nVITE_FIREBASE_STORAGE_BUCKET=seu-projeto.appspot.com\nVITE_FIREBASE_MESSAGING_SENDER_ID=000000000000\nVITE_FIREBASE_APP_ID=1:000000000000:web:0000000000000000\n\n# ----------------------------------------------------------------------------\n# CREDENCIAIS DE DEMONSTRA\u00c7\u00c3O LOCAL (Apenas para ambiente de testes / Demo)\n# ----------------------------------------------------------------------------\nVITE_DEMO_ADMIN_USER=Administrador\nVITE_DEMO_ADMIN_PIN=1234\n"
-            }
-        };
-
         // Safe LocalStorage Helper
         function safeGetStorage(key, fallback) {
             try {
@@ -2386,11 +2280,10 @@
             updateVisualModeUI();
         });
 
-        // View Switching (Portfolio / Curriculo ATS / Antigravity Hub)
+        // View Switching (Portfolio / Curriculo)
         const views = {
             portfolio: document.getElementById('view-portfolio'),
-            curriculo: document.getElementById('view-curriculo'),
-            antigravity: document.getElementById('view-antigravity')
+            curriculo: document.getElementById('view-curriculo')
         };
         const navBtns = document.querySelectorAll('.nav-links .nav-btn');
         const navLinksContainer = document.getElementById('navLinks');
@@ -2497,42 +2390,6 @@
         document.getElementById('printCvBtn').addEventListener('click', () => {
             window.print();
         });
-        document.getElementById('copyCvMdBtn').addEventListener('click', () => {
-            copyTextToClipboard(EMBEDDED_DOCS.curriculo.content, 'Currículo Markdown copiado com sucesso!');
-        });
-
-        // Antigravity & Docs Hub Tabs
-        let currentDocKey = 'prompt';
-        const docPanelTitle = document.getElementById('docPanelTitle');
-        const docPanelDesc = document.getElementById('docPanelDesc');
-        const docPanelPre = document.getElementById('docPanelPre');
-        const hubTabBtns = document.querySelectorAll('#view-antigravity .filter-btn[data-doc]');
-
-        function renderDocPanel(key) {
-            currentDocKey = key;
-            const doc = EMBEDDED_DOCS[key];
-            if (!doc) return;
-            docPanelTitle.textContent = doc.title;
-            docPanelDesc.textContent = doc.desc;
-            docPanelPre.textContent = doc.content;
-        }
-        renderDocPanel('prompt');
-
-        hubTabBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                hubTabBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                renderDocPanel(btn.getAttribute('data-doc'));
-                playHudBeep(1020, 'sine', 0.05);
-            });
-        });
-
-        document.getElementById('copyCurrentDocBtn').addEventListener('click', () => {
-            const doc = EMBEDDED_DOCS[currentDocKey];
-            if (doc) {
-                copyTextToClipboard(doc.content, doc.title + ' copiado!');
-            }
-        });
-    </script>
+        </script>
 </body>
 </html>
