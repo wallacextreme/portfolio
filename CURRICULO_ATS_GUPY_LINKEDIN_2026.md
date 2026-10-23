@@ -1,4 +1,4 @@
-# Wallace de Paula Soares
+﻿# Wallace de Paula Soares
 **Desenvolvedor Full Stack & Engenheiro de Software (TypeScript | React & Next.js | Tauri & Rust | PWA Offline-First)**
 
 📍 Nova Friburgo / Rio de Janeiro - RJ, Brasil *(Disponível para atuação Remota ou Híbrida)*  
@@ -10,7 +10,7 @@
 
 ## 🎯 Resumo Profissional
 
-Engenheiro de Software e Desenvolvedor Full Stack graduado em **Análise e Desenvolvimento de Sistemas (Estácio)**, especializado na arquitetura e entrega de aplicações web de alta resiliência (**React 19, Next.js 15, TypeScript Strict**), sistemas **Offline-First (PWA, Service Workers, IndexedDB, SQLite)** e aplicações **Desktop nativas para Windows (Tauri v2 / Rust)**. Combino rigor técnico em **Clean Architecture**, sincronização transacional distribuída (**Outbox Pattern / Last-Write-Wins**), segurança de dados (**PostgreSQL RLS / RBAC**) e **+300 testes automatizados (Vitest / Bun Test)** com 20 anos de domínio prático em regras de negócio de varejo, logística, PDV e conformidade fiscal brasileira (NF-e, SPED, SEFAZ).
+Engenheiro de Software e Desenvolvedor Full Stack graduado em **Análise e Desenvolvimento de Sistemas (Estácio)**, especializado na arquitetura e entrega de aplicações web de alta resiliência (**React 19, Next.js 15, TypeScript Strict**), sistemas **Offline-First (PWA, Service Workers, IndexedDB, SQLite)** e aplicações **Desktop nativas para Windows (Tauri v2 / Rust)**. Combino rigor técnico em **Clean Architecture**, sincronização transacional distribuída (**Outbox Pattern / Last-Write-Wins**), segurança de dados (**PostgreSQL RLS / RBAC**) e **+1.600 testes automatizados (1.102 no GestãoPro, 370 no Cinzas do Éter, 149 na Pizzaria, 126 no FiscalFlow, 26 no Catálogo Balcão) via Vitest e Bun Test** com 20 anos de domínio prático em regras de negócio de varejo, logística, PDV e conformidade fiscal brasileira (NF-e, SPED, SEFAZ).
 
 ---
 
@@ -48,7 +48,7 @@ Engenheiro de Software e Desenvolvedor Full Stack graduado em **Análise e Desen
 
 ### 1. **FiscalFlow — Gestão & Auditoria Fiscal Eletrônica**
 - **Stack:** Tauri v2 (Rust), TypeScript (Strict), SQLite 3, WebAssembly (`sql.js`), Tailwind CSS, Vitest.
-- **Links:** [Repositório GitHub](https://github.com/wallacextreme/FiscalFlow) | [Demo Online](https://wallacextreme.github.io/FiscalFlow/)
+- **Links:** [Repositório GitHub](https://github.com/wallacextreme/FiscalFlow) | [Demo Online](https://wallacextreme.github.io/FiscalFlow/) | [Release v1.0.0 Windows](https://github.com/wallacextreme/FiscalFlow/releases/tag/v1.0.0)
 - Sistema 100% Offline-First com persistência híbrida (SQLite nativo via Tauri SQL Plugin e fallback WebAssembly no navegador).
 - Motor de parsing e auditoria para **NF-e 4.00, NFC-e, NFS-e (Padrão Nacional e ABRASF 2.04), CT-e 4.00 e SPED Fiscal** (EFD ICMS/IPI com Registros 0000, 0100, C100 e E110).
 - Validação oficial do **Módulo 11 da SEFAZ** para chaves de 44 dígitos, desduplicação criptográfica via **SHA-256** e exportação contábil brasileira (CSV com UTF-8 BOM e pacotes ZIP com manifesto).
@@ -56,10 +56,10 @@ Engenheiro de Software e Desenvolvedor Full Stack graduado em **Análise e Desen
 
 ### 2. **GestãoPro — ERP Comercial, PDV & Sync Engine (v1.13.0)**
 - **Stack:** Tauri v2 (.exe/.msi), JavaScript ES6+ / TypeScript, Vite 8, Tailwind CSS v4, IndexedDB, Firebase Firestore REST API, Bun Test.
-- **Links:** [Repositório GitHub](https://github.com/wallacextreme/gerenciador-de-produtos) | [Demo Online](https://wallacextreme.github.io/gerenciador-de-produtos/)
+- **Links:** [Repositório GitHub](https://github.com/wallacextreme/gerenciador-de-produtos) | [Demo Online](https://wallacextreme.github.io/gerenciador-de-produtos/) | [Release v1.13.0 Windows](https://github.com/wallacextreme/gerenciador-de-produtos/releases/tag/v1.13.0)
 - ERP completo estruturado em 13 módulos: Catálogo de Produtos, Controle de Estoque, Frente de Caixa (PDV), Compras, Cotações Comparativas por Fornecedor, Dashboard Analítico e Relatórios de Impressão.
 - Arquitetura de sincronização em nuvem baseada no **Outbox Pattern (`SyncEngine`)**, com coalescência inteligente de fila, escuta reativa via `EventBus` e resolução de conflitos **Last Write Wins (LWW)**.
-- **Qualidade:** **171 testes automatizados passando (0 falhas)** distribuídos em 14 suítes de teste (`bun test`).
+- **Qualidade:** **1.102 testes automatizados passando (0 falhas)** distribuídos em 14 suítes de teste (`bun test`).
 
 ### 3. **Catálogo Inteligente de Balcão — Engenharia Reversa de PDFs Automotivos**
 - **Stack:** Python (`PyMuPDF` / `fitz`, `Pillow`), TypeScript Strict, Bun, Vite, Tailwind CSS, IndexedDB, PWA, Tauri v2.

@@ -1,4 +1,4 @@
-# Portfólio Profissional — Wallace Soares
+﻿# Portfólio Profissional — Wallace Soares
 
 [![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub_Pages-2563eb?style=for-the-badge&logo=github&logoColor=white)](https://wallacextreme.github.io/portfolio/)
 [![Formação](https://img.shields.io/badge/Graduado-Estácio_de_Sá-059669?style=for-the-badge&logo=academia&logoColor=white)](https://consultadiploma.estacio.br/diploma/163.163.80fed31e1b42)
