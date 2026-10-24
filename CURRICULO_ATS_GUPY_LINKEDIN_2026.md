@@ -46,7 +46,14 @@ Engenheiro de Software e Desenvolvedor Full Stack graduado em **Análise e Desen
 
 ## 🚀 Projetos em Destaque (Código & Demos Auditáveis)
 
-### 1. **FiscalFlow — Gestão & Auditoria Fiscal Eletrônica**
+### 1. **Sportinox — Catálogo Inteligente de Balcão (Adesivos Resinados & PPF)**
+*Tauri v2 (Rust) • PWA Offline-First • Python (PyMuPDF / Playwright) • WebP Near-Lossless • IndexedDB • TypeScript*
+- Engenharia reversa e mineração de dados de 3.396 peças automotivas e 3.435 imagens WebP em estúdio HD com recomposição Alpha SMask e remoção de fundos (#FFFFFF puro).
+- Motor de busca sub-50ms (média 1.2ms) em memória com normalização homoglífica (CALI35 == CAL135) e 4 naturezas de relacionamentos técnicos.
+- Aplicativo nativo Windows (.exe e .msi via Tauri v2) e PWA offline instalável com 17 testes automatizados cobrindo 10 Quality Gates.
+- **Repositório:** [github.com/wallacextreme/sportinox-catalogo-balcao](https://github.com/wallacextreme/sportinox-catalogo-balcao) • **PWA Demo:** [wallacextreme.github.io/sportinox-catalogo-balcao](https://wallacextreme.github.io/sportinox-catalogo-balcao/)
+
+### 2. **FiscalFlow — Gestão & Auditoria Fiscal Eletrônica**
 - **Stack:** Tauri v2 (Rust), TypeScript (Strict), SQLite 3, WebAssembly (`sql.js`), Tailwind CSS, Vitest.
 - **Links:** [Repositório GitHub](https://github.com/wallacextreme/FiscalFlow) | [Demo Online](https://wallacextreme.github.io/FiscalFlow/) | [Release v1.0.0 Windows](https://github.com/wallacextreme/FiscalFlow/releases/tag/v1.0.0)
 - Sistema 100% Offline-First com persistência híbrida (SQLite nativo via Tauri SQL Plugin e fallback WebAssembly no navegador).
