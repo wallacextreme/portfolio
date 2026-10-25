@@ -10,7 +10,7 @@
 
 ## 🎯 Resumo Profissional
 
-Engenheiro de Software e Desenvolvedor Full Stack graduado em **Análise e Desenvolvimento de Sistemas (Estácio)**, especializado na arquitetura e entrega de aplicações web de alta resiliência (**React 19, Next.js 15, TypeScript Strict**), sistemas **Offline-First (PWA, Service Workers, IndexedDB, SQLite)** e aplicações **Desktop nativas para Windows (Tauri v2 / Rust)**. Combino rigor técnico em **Clean Architecture**, sincronização transacional distribuída (**Outbox Pattern / Last-Write-Wins**), segurança de dados (**PostgreSQL RLS / RBAC**) e **+1.600 testes automatizados (1.102 no GestãoPro, 370 no Cinzas do Éter, 149 na Pizzaria, 126 no FiscalFlow, 26 no Catálogo Balcão) via Vitest e Bun Test** com 20 anos de domínio prático em regras de negócio de varejo, logística, PDV e conformidade fiscal brasileira (NF-e, SPED, SEFAZ).
+Engenheiro de Software e Desenvolvedor Full Stack graduado em **Análise e Desenvolvimento de Sistemas (Estácio)**, especializado na arquitetura e entrega de aplicações web de alta resiliência (**React 19, Next.js 15, TypeScript Strict**), sistemas **Offline-First (PWA, Service Workers, IndexedDB, SQLite)** e aplicações **Desktop nativas para Windows (Tauri v2 / Rust)**. Combino rigor técnico em **Clean Architecture**, sincronização transacional distribuída (**Outbox Pattern / Last-Write-Wins**), segurança de dados (**PostgreSQL RLS / RBAC**) e **+1.617 testes automatizados (1.102 no GestãoPro, 370 no Cinzas do Éter, 149 na Pizzaria, 126 no FiscalFlow, 26 no Catálogo Balcão) via Vitest e Bun Test** com 20 anos de domínio prático em regras de negócio de varejo, logística, PDV e conformidade fiscal brasileira (NF-e, SPED, SEFAZ).
 
 ---
 
