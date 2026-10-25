@@ -57,7 +57,7 @@ Focado em **Clean Architecture**, sincronização transacional distribuída (**O
 
 ### 1. **Adesivos Resinados & PPF — Catálogo Inteligente de Balcão**
 * **Stack:** Tauri v2 (Rust Core), PWA Offline-First, TypeScript Strict, Python (`PyMuPDF` / `Playwright`), IndexedDB, WebP Studio HD, Tailwind CSS, Bun Test.
-* **Repositório:** [github.com/wallacextreme/sportinox-catalogo-balcao](https://github.com/wallacextreme/sportinox-catalogo-balcao) | **Demo PWA:** [wallacextreme.github.io/sportinox-catalogo-balcao](https://wallacextreme.github.io/sportinox-catalogo-balcao/) | **Releases:** [.exe e .msi no GitHub](https://github.com/wallacextreme/sportinox-catalogo-balcao/releases/tag/v1.0.0)
+* **Repositório:** [github.com/wallacextreme/adesivos-resinados-ppf](https://github.com/wallacextreme/adesivos-resinados-ppf) | **Demo PWA:** [wallacextreme.github.io/adesivos-resinados-ppf](https://wallacextreme.github.io/adesivos-resinados-ppf/) | **Releases:** [.exe e .msi no GitHub](https://github.com/wallacextreme/adesivos-resinados-ppf/releases/tag/v1.0.0)
 * Sistema de balcão 100% Offline-First para consulta técnica, visualização e venda de 3.396 peças automotivas e 3.435 imagens WebP em alta definição.
 * Pipeline de engenharia reversa em Python para extração binária via `PyMuPDF` XREF com recomposição de máscaras de transparência Alpha `SMask` sobre canvas branco puro (`#FFFFFF`).
 * Motor de busca multi-token em memória com tempo de resposta sub-50ms (média de 1.2ms) e normalização homoglífica de tolerância a digitação (`O↔0`, `I↔1`).
