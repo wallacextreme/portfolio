@@ -55,7 +55,18 @@ Focado em **Clean Architecture**, sincronização transacional distribuída (**O
 
 ## 🚀 Projetos em Destaque
 
-### 1. **Adesivos Resinados & PPF — Catálogo Inteligente de Balcão**
+### 1. **Catálogo Inteligente TK 2024 — Tem Kits Comercial**
+* **Stack:** PWA Offline-First, TypeScript Strict, IndexedDB, Tailwind CSS, Service Worker, Disaster Recovery SHA-256, Firebase Hosting, Bun Test (30 Pass).
+* **Demo PWA Online:** [catalogo-tk-pro.web.app](https://catalogo-tk-pro.web.app/) | **Repositório:** [github.com/wallacextreme/catalogo-tk-2024](https://github.com/wallacextreme/catalogo-tk-2024) *(Privado)*
+* Sistema de balcão comercial e retaguarda de autopeças 100% Offline-First para consulta técnica, precificação e localização de 9.413 SKUs automotivos e 7.641 fotos WebP HD.
+* Motor de busca Omnibox sub-50ms (latência real de 0.8ms) com indexação multi-token por Código TK, fornecedores (VP, TSA, DS), contra-peças, OEMs, medidas e caixas físicas.
+* Localizador visual de estoque físico da loja (caixas, prateleiras e gavetas) integrado aos cards com edição rápida e painel retrátil de Mapa da Loja.
+* Grafo de relacionamentos automotivos com 4 naturezas técnicas: Equivalência Direta com bloqueio entre categorias distintas, Compatibilidade de Acoplamento (Contra-Peça), Composição de Kit e Variantes de Produto.
+* Modo Privacidade de Balcão (Ocultar/Mostrar Preços) com layout fixo em 1 clique para atendimento seguro ao virar o monitor para o cliente.
+* Central de Gestão & Disaster Recovery em modal dedicado: exportação/restauração completa com validação criptográfica SHA-256 e importação/exportação em lote via CSV para Excel.
+* Suíte de 30 testes automatizados cobrindo normalização homoglífica, integridade monetária em centavos inteiros (BigInt), segurança anti-XSS e benchmarks de performance.
+
+### 2. **Adesivos Resinados & PPF — Catálogo Inteligente de Balcão**
 * **Stack:** Tauri v2 (Rust Core), PWA Offline-First, TypeScript Strict, Python (`PyMuPDF` / `Playwright`), IndexedDB, WebP Studio HD, Tailwind CSS, Bun Test.
 * **Repositório:** [github.com/wallacextreme/adesivos-resinados-ppf](https://github.com/wallacextreme/adesivos-resinados-ppf) | **Demo PWA:** [wallacextreme.github.io/adesivos-resinados-ppf](https://wallacextreme.github.io/adesivos-resinados-ppf/) | **Releases:** [.exe e .msi no GitHub](https://github.com/wallacextreme/adesivos-resinados-ppf/releases/tag/v1.0.0)
 * Sistema de balcão 100% Offline-First para consulta técnica, visualização e venda de 3.396 peças automotivas e 3.435 imagens WebP em alta definição.
@@ -66,7 +77,7 @@ Focado em **Clean Architecture**, sincronização transacional distribuída (**O
 * Persistência em IndexedDB com isolamento inviolável dos dados locais da loja física (preços, estoque e prateleiras nunca são sobrescritos pelo catálogo).
 * Aplicativo nativo Windows (`.exe` via NSIS e `.msi` corporativo via WiX) e PWA instalável com 17 testes automatizados cobrindo 10 Quality Gates.
 
-### 2. **FiscalFlow — Gestão & Auditoria Fiscal Eletrônica**
+### 3. **FiscalFlow — Gestão & Auditoria Fiscal Eletrônica**
 * **Stack:** Tauri 2 (Rust), TypeScript (Strict Mode), SQLite 3 local, WebAssembly (`sql.js`), Tailwind CSS, Vitest.
 * **Repositório:** [github.com/wallacextreme/FiscalFlow](https://github.com/wallacextreme/FiscalFlow) | **Demo Online:** [wallacextreme.github.io/FiscalFlow](https://wallacextreme.github.io/FiscalFlow/) | **Release:** [v1.0.0 (.msi / .exe)](https://github.com/wallacextreme/FiscalFlow/releases/tag/v1.0.0)
 * Arquitetura 100% Offline-First com persistência relacional em SQLite embutido via Tauri SQL Plugin e fallback WebAssembly no navegador.
@@ -76,7 +87,7 @@ Focado em **Clean Architecture**, sincronização transacional distribuída (**O
 * Suíte exaustiva de 126 testes automatizados com 100% de aprovação no Vitest, cobertura analítica V8 e tipagem estrita com zero erros.
 * Avaliado sob o modelo de qualidade de produto de software **ISO/IEC 25010:2023** e processos alinhados à **ISO 9001:2026**.
 
-### 3. **GestãoPro ERP v1.13 — Gestão Comercial, PDV & Cloud Sync**
+### 4. **GestãoPro ERP v1.13 — Gestão Comercial, PDV & Cloud Sync**
 * **Stack:** Tauri v2, Vite 8, Tailwind CSS v4, TypeScript, IndexedDB, Firebase Firestore & RTDB, Vitest.
 * **Repositório:** [github.com/wallacextreme/gerenciador-de-produtos](https://github.com/wallacextreme/gerenciador-de-produtos) | **Demo Online:** [wallacextreme.github.io/gerenciador-de-produtos](https://wallacextreme.github.io/gerenciador-de-produtos/) | **Release:** [v1.13.0 (.msi / .exe)](https://github.com/wallacextreme/gerenciador-de-produtos/releases/tag/v1.13.0)
 * ERP completo em 13 módulos operacionais: Cadastro de Produtos, Controle de Estoque, PDV Frente de Caixa, Compras, Cotações de Fornecedores, Financeiro e Dashboard Executivo.
@@ -84,7 +95,7 @@ Focado em **Clean Architecture**, sincronização transacional distribuída (**O
 * Cálculos financeiros com integridade em centavos inteiros, suporte a leitor de código de barras e emissão de comprovantes de venda.
 * Cobertura de testes massiva com **1.102 testes automatizados** (100% Pass) validando todas as regras fiscais e transacionais.
 
-### 4. **Plataforma de Pizzaria Full-Stack**
+### 5. **Plataforma de Pizzaria Full-Stack**
 * **Stack:** Next.js 15, React 19, TypeScript, Supabase (Auth, Storage, Realtime, PostgreSQL), Tailwind CSS, Vitest.
 * **Repositório:** [github.com/wallacextreme/pizzaria-platform](https://github.com/wallacextreme/pizzaria-platform)
 * Painel administrativo com Kanban em tempo real sincronizado via Supabase Realtime e WebSockets.
@@ -93,14 +104,14 @@ Focado em **Clean Architecture**, sincronização transacional distribuída (**O
 * Pipeline client-side com compressão dinâmica via Canvas API para formato WebP antes do envio ao storage.
 * Suíte completa de 149 testes unitários e de integração com Vitest.
 
-### 5. **EtiquetaPro — Gerador de Etiquetas PWA (Offline-First)**
+### 6. **EtiquetaPro — Gerador de Etiquetas PWA (Offline-First)**
 * **Stack:** JavaScript Vanilla (ES6+), PWA, Service Worker, Cache Storage API, CSS Paged Media, IndexedDB.
 * **Repositório:** [github.com/wallacextreme/etiquetapro](https://github.com/wallacextreme/etiquetapro) | **Demo:** [wallacextreme.github.io/etiquetapro](https://wallacextreme.github.io/etiquetapro/)
 * Motor de diagramação física milimétrica (`mm`) homologado para 21 gabaritos Pimaco (formatos A4 e Carta).
 * Arquitetura 100% Offline-First que opera de forma ininterrupta sem dependência de internet.
 * Suporte à instalação nativa PWA em desktops e dispositivos móveis com footprint ultraleve e sem frameworks pesados.
 
-### 6. **Cinzas do Éter — JRPG 16-Bit**
+### 7. **Cinzas do Éter — JRPG 16-Bit**
 * **Stack:** Phaser 3, TypeScript, Vite, Bun, Vitest.
 * Arquitetura de games 2D modular orientada a entidades e desacoplamento de sistemas (Player Entity, Map Layer Manager, Dialogue System).
 * Cobertura de regras lógicas de gameplay e estados de entidades com **370 testes automatizados** em Vitest.
