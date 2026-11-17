@@ -44,27 +44,39 @@ O portfólio está disponível publicamente com duas experiências visuais compl
 * **Engenharia**: Sistema profissional para consulta técnica, rastreabilidade oficial e equivalência cruzada (cross-reference) multi-catálogo de palhetas automotivas (DYNA 2025, CINOY 2023 e VETOR 2025). Exclusividade absoluta para veículos de linha leve (exclusão estrita de caminhões e linha pesada), desduplicação de aplicações redundantes em fichas unificadas, motor de busca com tokenização e busca booleana por medidas/posições, e arquitetura 100% offline-ready com cache total de base de dados.
 * **Demo Online**: [https://wallacextreme.github.io/catalogo-palhetas/](https://wallacextreme.github.io/catalogo-palhetas/)
 
-### 3. [Plataforma de Pizzaria Full-Stack](https://github.com/wallacextreme/pizzaria-platform)
-* **Stack**: Next.js 15, React 19, TypeScript, Supabase, PostgreSQL com RLS granular, Tailwind CSS, Vitest.
-* **Engenharia**: Painel administrativo com Kanban em tempo real via Supabase Realtime, segurança com Row Level Security e RBAC, regras de negócio e cálculos de moeda em centavos inteiros no backend, pipeline client-side de compressão Canvas para WebP e suíte de testes com Vitest.
+### 3. [Plataforma de Pizzaria Full-Stack — Forno & Massa (PWA)](https://github.com/wallacextreme/pizzaria-platform)
+* **Stack**: Next.js 15, React 19, TypeScript, Supabase (Auth, RLS, Realtime), PWA (`sw.js` + Manifest), Tailwind CSS, Vitest (**152 testes**).
+* **Engenharia**: Painel administrativo com Kanban em tempo real via Supabase Realtime, Row Level Security e RBAC, cálculos em centavos inteiros no servidor, compressão WebP via Canvas API, PWA instalável e **Modo Demo Sandbox (`/demo`)** sem login para recrutadores.
+* **Demo Sandbox Online**: [https://wallacextreme.github.io/pizzaria-platform/demo/](https://wallacextreme.github.io/pizzaria-platform/demo/)
 
 ### 4. [EtiquetaPro — Gerador de Etiquetas PWA](https://github.com/wallacextreme/etiquetapro)
 * **Stack**: JavaScript Vanilla, PWA, Service Worker, Cache Storage API, CSS Paged Media.
 * **Engenharia**: Motor de diagramação e impressão física milimétrica (`mm`) para 21 gabaritos Pimaco homologados (A4 e Carta), fila dinâmica de impressão, funcionamento 100% offline e instalação nativa PWA sem frameworks pesados.
 * **Demo Online**: [https://wallacextreme.github.io/etiquetapro/](https://wallacextreme.github.io/etiquetapro/)
 
-### 5. [Controle de Entregas — Autopeças (PWA Logística)](https://github.com/wallacextreme/controle-entregas-friburgo)
-* **Stack**: JavaScript Vanilla ES6+, IndexedDB v2, PWA, Service Worker, CSS Paged Media.
-* **Engenharia**: Arquitetura em camadas desacoplada (UI, Services, Repositories, DB) em arquivo único sem dependências externas. Quadro Kanban de 5 colunas com drag & drop nativo, visão mobile-first para motoboys com Waze/Maps/WhatsApp, módulo financeiro de acerto diário com saldo líquido, valores em centavos inteiros (eliminação do IEEE 754 float), máquina de estados estrita com 8 estados, prevenção de troco fantasma, serialização por mutex assíncrono e suíte de 136 testes automatizados.
-* **Demo Online**: [https://wallacextreme.github.io/controle-entregas-friburgo/](https://wallacextreme.github.io/controle-entregas-friburgo/)
+### 5. [Controle de Entregas Friburgo v5.1.0 (SaaS Pro Logística PWA)](https://github.com/wallacextreme/controle-entregas-friburgo)
+* **Stack**: JavaScript ES6+, IndexedDB v3 (Outbox Offline), ISO 18004 QR Code, WebP Canvas POD, PWA, Playwright E2E.
+* **Engenharia**: Roteirização por 4 corredores reais de Nova Friburgo (29 bairros com SLA e taxa sugerida), Despacho em Lote + Google Maps multi-paradas + QR Code offline, Comprovante POD WebP, bloqueio de Logística Reversa no acerto de caixa, Thumb-Zone Mobile + Modo Alto Contraste Solar e testes E2E Playwright.
+* **Demo Recrutadores (`?demo=1`)**: [https://wallacextreme.github.io/controle-entregas-friburgo/?demo=1](https://wallacextreme.github.io/controle-entregas-friburgo/?demo=1)
 
-### 6. Controle de Pagamentos & ERP PRO
-* **Stack**: Offline-First, Tauri (Desktop Windows .msi e .exe), IndexedDB, SQLite, Tailwind CSS, PWA.
-* **Engenharia**: Arquitetura transacional local sem dependência de internet, rotinas de backup e restauração JSON, exportação CSV e distribuição desktop nativa para Windows.
+### 6. [OmniDesk — Acesso Remoto P2P Zero-Trust](https://github.com/wallacextreme/omnidesk)
+* **Stack**: Tauri v2 (Rust Win32 GDI & Lock-Free `SendInput`), WebRTC P2P Full HD 4:4:4, WSS Cloud Signaling, PBKDF2-SHA256, PWA.
+* **Engenharia**: Acesso remoto de ultra-baixa latência 60 FPS com autenticaçãoZero-Trust (600.000 iterações PBKDF2), proteção anti-hijacking, ACL com Panic Button e transferência de arquivos SHA-256. Auditado ISO/IEC 25010:2023 e ISO 9001:2026.
+* **PWA Live**: [https://omnidesk-remote.web.app](https://omnidesk-remote.web.app)
 
-### 7. Cinzas do Éter — JRPG 16-Bit
-* **Stack**: Phaser 3, TypeScript, Vite, Bun, Vitest, Game Architecture.
-* **Engenharia**: Arquitetura modular de jogos 2D com desacoplamento de entidades (Player Entity, Map Manager por camadas, Dialogue System dinâmico) e testes automatizados.
+### 7. [EscalaPro CLT v2.0 — Gestão de Escalas PWA](https://github.com/wallacextreme/escalapro-clt)
+* **Stack**: React 19, TypeScript 5.7, Vite 6, IndexedDB (Dexie), SheetJS (`xlsx`), Tauri v2, Vitest & Playwright E2E.
+* **Engenharia**: Offline-First PWA com 6 motores de conformidade trabalhista CLT / EC 141/2026, exportação Excel e testes automatizados unitários e E2E.
+* **Demo Online**: [https://wallacextreme.github.io/escalapro-clt/](https://wallacextreme.github.io/escalapro-clt/)
+
+### 8. [DEFCON: Frontline — Tactical 3D Tower Defense PWA](https://github.com/wallacextreme/defcon-frontline)
+* **Stack**: Three.js 0.187 (WebGL 3D), Vite 7, Save v3, PWA Offline-First.
+* **Demo Online**: [https://wallacextreme.github.io/defcon-frontline/](https://wallacextreme.github.io/defcon-frontline/)
+
+### 9. [Cinzas do Éter v1.0.0 — JRPG 16-Bit Original](https://github.com/wallacextreme/cinzas-do-eter)
+* **Stack**: Phaser 3, TypeScript 6.0 Strict, Vite 8.2, Vitest (**370 testes**).
+* **Engenharia**: Arquitetura 2D orientada a eventos (`EventBus` + FSM), interiores HD-2D/SNES, mapa-mundi completo e simulação Monte Carlo de combate.
+* **Demo Online**: [https://wallacextreme.github.io/cinzas-do-eter/](https://wallacextreme.github.io/cinzas-do-eter/)
 
 ### 8. [Arcane Lore — Portal RPG](https://github.com/wallacextreme/Arcane-Lore)
 * **Stack**: HTML5 Semântico, CSS3 Flexbox/Gradients, Bootstrap 5.3.0.

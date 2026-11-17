@@ -13,7 +13,7 @@ Nova Friburgo / Rio de Janeiro - RJ, Brasil *(Disponível para atuação Remota 
 
 Engenheiro de Software e Desenvolvedor Full Stack graduado em **Análise e Desenvolvimento de Sistemas**, especializado na concepção, arquitetura e entrega de aplicações web de alta resiliência (**React 19, Next.js 15, TypeScript Strict**), ecossistemas **Offline-First (PWA, Service Workers, IndexedDB, SQLite)** e aplicações **Desktop nativas para Windows (Tauri v2 / Rust)**. 
 
-Focado em **Clean Architecture**, sincronização transacional distribuída (**Outbox Pattern / Last-Write-Wins**), segurança de dados (**PostgreSQL Row Level Security - RLS / RBAC**), cálculos monetários estritos em centavos inteiros (`BigInt` / inteiros) e garantia de qualidade com mais de **+1.617 testes automatizados somados** (1.102 no GestãoPro, 370 no Cinzas do Éter, 149 na Pizzaria, 126 no FiscalFlow, 17 no Catálogo de Adesivos Resinados & PPF) via Vitest e Bun Test. Aliado a 20 anos de experiência prática e visão de negócio em gestão de estoque, logística, balcão, PDV e conformidade fiscal brasileira (NF-e, NFC-e, NFS-e, CT-e, SPED Fiscal e SEFAZ).
+Focado em **Clean Architecture**, sincronização transacional distribuída (**Outbox Pattern / Last-Write-Wins**), segurança Zero-Trust (**PBKDF2-SHA256 / PostgreSQL Row Level Security - RLS / RBAC**), cálculos monetários estritos em centavos inteiros (`BigInt` / inteiros) e garantia contínua de qualidade com **mais de 1.000 testes automatizados** somados entre Vitest, Bun Test e Playwright E2E (370 no Cinzas do Éter v1.0.0, 171 no GestãoPro v1.13.1, 152 na Plataforma Pizzaria, 136+ Go-Live & E2E Playwright no Controle de Entregas Friburgo v5.1, 126 no FiscalFlow, 30 no Catálogo TK 2024, 29 no Catálogo de Palhetas, 17 no Adesivos Resinados & PPF e 8+ E2E no EscalaPro CLT v2.0). Aliado a 20 anos de experiência prática e visão de negócio em gestão de estoque, logística, balcão, PDV e conformidade fiscal brasileira (NF-e, NFC-e, NFS-e, CT-e, SPED Fiscal e SEFAZ).
 
 ---
 
@@ -87,46 +87,61 @@ Focado em **Clean Architecture**, sincronização transacional distribuída (**O
 * Suíte exaustiva de 126 testes automatizados com 100% de aprovação no Vitest, cobertura analítica V8 e tipagem estrita com zero erros.
 * Avaliado sob o modelo de qualidade de produto de software **ISO/IEC 25010:2023** e processos alinhados à **ISO 9001:2026**.
 
-### 4. **GestãoPro ERP v1.13 — Gestão Comercial, PDV & Cloud Sync**
-* **Stack:** Tauri v2, Vite 8, Tailwind CSS v4, TypeScript, IndexedDB, Firebase Firestore & RTDB, Vitest.
+### 4. **GestãoPro ERP v1.13.1 — Gestão Comercial, PDV, Keep-Alive & Cloud Sync**
+* **Stack:** Tauri v2, Vite 8, Tailwind CSS v4, TypeScript, IndexedDB, Firebase Firestore & RTDB, Supabase Storage, Bun Test / Vitest.
 * **Repositório:** [github.com/wallacextreme/gerenciador-de-produtos](https://github.com/wallacextreme/gerenciador-de-produtos) | **Demo Online:** [wallacextreme.github.io/gerenciador-de-produtos](https://wallacextreme.github.io/gerenciador-de-produtos/) | **Release:** [v1.13.0 (.msi / .exe)](https://github.com/wallacextreme/gerenciador-de-produtos/releases/tag/v1.13.0)
 * ERP completo em 13 módulos operacionais: Cadastro de Produtos, Controle de Estoque, PDV Frente de Caixa, Compras, Cotações de Fornecedores, Financeiro e Dashboard Executivo.
-* Motor de sincronização em nuvem resiliente baseado no Padrão Outbox com fila transacional local e resolução de conflitos *Last-Write-Wins (LWW)*.
+* Motor de sincronização em nuvem resiliente baseado no Padrão Outbox com fila transacional local, resolução determinística *Last-Write-Wins (LWW)*, Supabase Storage e sistema Keep-Alive anti-pausa em 7 camadas.
 * Cálculos financeiros com integridade em centavos inteiros, suporte a leitor de código de barras e emissão de comprovantes de venda.
-* Cobertura de testes massiva com **1.102 testes automatizados** (100% Pass) validando todas as regras fiscais e transacionais.
 
-### 5. **Plataforma de Pizzaria Full-Stack**
-* **Stack:** Next.js 15, React 19, TypeScript, Supabase (Auth, Storage, Realtime, PostgreSQL), Tailwind CSS, Vitest.
-* **Repositório:** [github.com/wallacextreme/pizzaria-platform](https://github.com/wallacextreme/pizzaria-platform)
-* Painel administrativo com Kanban em tempo real sincronizado via Supabase Realtime e WebSockets.
-* Segurança reforçada via Row Level Security (RLS) granular no PostgreSQL, com isolamento estrito de papéis e dados de clientes.
-* Cálculos monetários no servidor com precisão de centavos inteiros para eliminação de erros de arredondamento.
-* Pipeline client-side com compressão dinâmica via Canvas API para formato WebP antes do envio ao storage.
-* Suíte completa de 149 testes unitários e de integração com Vitest.
+### 5. **OmniDesk — Acesso Remoto P2P Zero-Trust & Tauri Desktop**
+* **Stack:** Tauri v2 (Rust Win32 GDI & Lock-Free `SendInput`), WebRTC P2P (Full HD 60 FPS 4:4:4), WSS Cloud Signaling, PBKDF2-SHA256, PWA Offline-First, ISO/IEC 25010:2023.
+* **Repositório:** [github.com/wallacextreme/omnidesk](https://github.com/wallacextreme/omnidesk) | **PWA Live:** [omnidesk-remote.web.app](https://omnidesk-remote.web.app)
+* Solução corporativa open-source para acesso remoto P2P com criptografia ponta a ponta, desafio PBKDF2-SHA256 (600.000 iterações), proteção anti-hijacking de ID (`hostSecret`) e sinalização Cloud WSS Zero-Config (compatível inclusive com Windows 7 / Chrome 109 e Windows 10/11).
+* Controle de acesso granular (ACL) com *Panic Button* (liberação instantânea de teclas presas) e transferência de arquivos em chunks de 16 KB com integridade SHA-256.
 
-### 6. **EtiquetaPro — Gerador de Etiquetas PWA (Offline-First)**
-* **Stack:** JavaScript Vanilla (ES6+), PWA, Service Worker, Cache Storage API, CSS Paged Media, IndexedDB.
-* **Repositório:** [github.com/wallacextreme/etiquetapro](https://github.com/wallacextreme/etiquetapro) | **Demo:** [wallacextreme.github.io/etiquetapro](https://wallacextreme.github.io/etiquetapro/)
-* Motor de diagramação física milimétrica (`mm`) homologado para 21 gabaritos Pimaco (formatos A4 e Carta).
-* Arquitetura 100% Offline-First que opera de forma ininterrupta sem dependência de internet.
-* Suporte à instalação nativa PWA em desktops e dispositivos móveis com footprint ultraleve e sem frameworks pesados.
+### 6. **Plataforma de Pizzaria Full-Stack — Forno & Massa (PWA + Kanban Realtime)**
+* **Stack:** Next.js 15, React 19, TypeScript Strict, Supabase (Auth RBAC, Storage, Realtime, PostgreSQL RLS), PWA (`sw.js` + Manifest), Tailwind CSS, Vitest (152 Testes).
+* **Repositório:** [github.com/wallacextreme/pizzaria-platform](https://github.com/wallacextreme/pizzaria-platform) | **Demo Sandbox (Recrutadores):** [wallacextreme.github.io/pizzaria-platform/demo/](https://wallacextreme.github.io/pizzaria-platform/demo/)
+* E-commerce completo com cardápio público, construtor meio a meio visual em SVG, checkout com recálculo anti-tampering em centavos no servidor e painel administrativo em tempo real via Supabase Realtime + RBAC e RLS granular.
+* Inclui Service Worker instalável, modo Sandbox interativo (`/demo`) para testagem ponta a ponta (Cliente → Cozinha Kanban → Acompanhamento Ao Vivo) sem exposição de credenciais e 152 testes automatizados (22 arquivos Vitest).
 
-### 7. **Cinzas do Éter — JRPG 16-Bit**
-* **Stack:** Phaser 3, TypeScript, Vite, Bun, Vitest.
-* Arquitetura de games 2D modular orientada a entidades e desacoplamento de sistemas (Player Entity, Map Layer Manager, Dialogue System).
-* Cobertura de regras lógicas de gameplay e estados de entidades com **370 testes automatizados** em Vitest.
+### 7. **Controle de Entregas Friburgo v5.1.0 (SaaS Pro Logística PWA)**
+* **Stack:** PWA Offline-First, JavaScript ES6+, IndexedDB v3 (Outbox Queue), WebP Canvas POD, ISO 18004 QR Code, CSS Paged Media, Playwright E2E.
+* **Repositório:** [github.com/wallacextreme/controle-entregas-friburgo](https://github.com/wallacextreme/controle-entregas-friburgo) | **Demo Recrutadores:** [wallacextreme.github.io/controle-entregas-friburgo/?demo=1](https://wallacextreme.github.io/controle-entregas-friburgo/?demo=1)
+* Motor de roteirização inteligente pelos 4 corredores logísticos de Nova Friburgo - RJ (29 bairros com taxa e SLA dinâmicos), despacho em lote com link multi-paradas no Google Maps/Waze e QR Code offline para o celular do motoboy.
+* Visão mobile focada em operação na rua (Thumb-Zone Bottom Nav + Modo Alto Contraste Solar), comprovante POD com foto WebP, fila de sincronização offline `Outbox`, bloqueio físico de logística reversa no acerto de caixa e suíte E2E multi-viewport no Playwright (zero overflow horizontal).
 
-### 7. **Sistemas Verticais de Produção: Tucano Cloud, Controle de Pagamentos & Entregas**
+### 8. **EscalaPro CLT v2.0 — Gestão de Escalas & Conformidade Trabalhista**
+* **Stack:** React 19, TypeScript 5.7, Vite 6, IndexedDB (`dexie`), SheetJS (`xlsx`), PWA Offline-First, Tauri v2, Vitest & Playwright E2E.
+* **Repositório:** [github.com/wallacextreme/escalapro-clt](https://github.com/wallacextreme/escalapro-clt) | **Demo PWA Online:** [wallacextreme.github.io/escalapro-clt/](https://wallacextreme.github.io/escalapro-clt/)
+* Sistema Offline-First com 6 motores trabalhistas CLT / EC 141/2026 para validação automática de jornadas, intrajornada, DSR e escalas, exportação Excel e testes automatizados unitários + E2E no Playwright.
+
+### 9. **DEFCON: Frontline — Tactical 3D Tower Defense PWA**
+* **Stack:** Three.js 0.187 (WebGL 3D), Vite 7, JavaScript ES6+, Save v3, PWA Offline-First, Mobile-First UI.
+* **Repositório:** [github.com/wallacextreme/defcon-frontline](https://github.com/wallacextreme/defcon-frontline) | **Demo Jogável Online:** [wallacextreme.github.io/defcon-frontline/](https://wallacextreme.github.io/defcon-frontline/)
+* Jogo tático C4ISR 3D de Tower Defense rodando diretamente no navegador com suporte completo a instalação PWA offline, sistema de persistência Save v3 e controles adaptados para mobile e desktop.
+
+### 10. **Cinzas do Éter v1.0.0 — JRPG 16-Bit Original**
+* **Stack:** Phaser 3, TypeScript 6.0 Strict, Vite 8.2, Vitest (370 Testes).
+* **Repositório:** [github.com/wallacextreme/cinzas-do-eter](https://github.com/wallacextreme/cinzas-do-eter) | **Demo Jogável Online:** [wallacextreme.github.io/cinzas-do-eter/](https://wallacextreme.github.io/cinzas-do-eter/)
+* Arquitetura de games 2D modular orientada a eventos (`EventBus` + Máquina de Estados Finita), interiores entráveis em estética SNES/HD-2D, mapa-mundi completo, simulação Monte Carlo de combate e **370 testes automatizados** no Vitest.
+
+### 11. **EtiquetaPro — Gerador de Etiquetas PWA (Offline-First)**
+* **Stack:** JavaScript Vanilla (ES6+), PWA, Service Worker, Cache Storage API, CSS Paged Media.
+* **Repositório:** [github.com/wallacextreme/etiquetapro](https://github.com/wallacextreme/etiquetapro) | **Demo Online:** [wallacextreme.github.io/etiquetapro/](https://wallacextreme.github.io/etiquetapro/)
+* Motor de diagramação física milimétrica (`mm`) homologado para 21 gabaritos Pimaco (formatos A4 e Carta), funcionando 100% offline.
+
+### 12. **Sistemas Verticais de Produção: Tucano Cloud (Vales) & Pagamentos PRO**
 * **Stack:** PWA Offline-First, Tauri (.msi / .exe Windows), TypeScript, IndexedDB, Firebase RTDB.
 * Controle transacional de vales de crédito e notas a prazo com sequências atômicas (`NP-XXXXXX` e `REC-XXXXXX`), blindagem contra baixas duplicadas e limites em tempo real.
-* Módulo logístico de expedição com Kanban de 5 colunas com drag & drop nativo, ações de 1 toque (Waze, Google Maps) e apuração de saldo líquido sem troco fantasma.
 
 ---
 
 ## 🛠️ Competências Técnicas
 
-* **Frontend & Interfaces Modernas:** TypeScript (Strict Mode), JavaScript ES6+, React 19, Next.js 15 (App Router, Server Actions), HTML5 Semântico, CSS3, Tailwind CSS v4, CSS Paged Media (`@page`), Bootstrap 5.
-* **Arquitetura Offline-First & Armazenamento Local:** Progressive Web Apps (PWA), Service Workers (Cache-First, Network-First, Stale-While-Revalidate), Cache Storage API, IndexedDB, SQLite 3 local, WebAssembly (`sql.js`), Sincronização em Nuvem (Outbox Pattern, Resolução de Conflitos LWW).
-* **Backend, Cloud & Bancos de Dados:** Node.js, Bun, Express.js, Python (Automação, Extração de Dados, PyMuPDF, Playwright), Supabase (PostgreSQL, Auth RBAC, Row Level Security - RLS, Storage, Realtime WebSockets), Firebase (Firestore REST, Realtime Database), PHP (MVC/PDO), REST APIs, Validação de Esquemas Zod.
-* **Desktop & Game Development:** Tauri v2 (Rust backend, geração de instaladores nativos Windows `.msi` e `.exe` via NSIS/WiX), Phaser 3 (Arquitetura 2D desacoplada, Entity & Dialogue Systems), Vite 8, Bun.
-* **Qualidade de Software, DevOps & Governança:** Vitest, Bun Test, Jest, Cobertura V8, Git, GitHub Actions (CI/CD Pipelines), Clean Architecture, Princípios SOLID, Modelo de Qualidade ISO/IEC 25010:2023, Procedimentos ISO 9001:2026.
+* **Frontend & Interfaces Modernas:** TypeScript (Strict Mode), JavaScript ES6+, React 19, Next.js 15 (App Router, Server Actions), HTML5 Semântico, CSS3, Tailwind CSS v4, CSS Paged Media (`@page`), Three.js (WebGL 3D), Bootstrap 5.
+* **Arquitetura Offline-First & Armazenamento Local:** Progressive Web Apps (PWA), Service Workers (Cache-First, Network-First, Stale-While-Revalidate), Cache Storage API, IndexedDB (`idb` / Dexie), SQLite 3 local, WebAssembly (`sql.js`), Sincronização em Nuvem (Outbox Pattern, Resolução de Conflitos LWW).
+* **Backend, P2P, Cloud & Bancos de Dados:** Node.js, Bun, Express.js, WebRTC P2P & WSS Signaling, Python (Automação, Extração de Dados, PyMuPDF, Playwright), Supabase (PostgreSQL, Auth RBAC, Row Level Security - RLS, Storage, Realtime WebSockets), Firebase (Firestore REST, Realtime Database, Hosting), PHP (MVC/PDO), REST APIs, Validação Zod.
+* **Desktop & Game Development:** Tauri v2 (Rust backend, Win32 GDI & `SendInput`, geração de instaladores nativos Windows `.msi` e `.exe` via NSIS/WiX), Phaser 3 (Arquitetura 2D desacoplada, EventBus & FSM), Vite 6/7/8, Bun.
+* **Qualidade de Software, DevOps & Governança:** Vitest, Bun Test, Playwright (E2E Multi-Viewport & Offline), Jest, Cobertura V8, Git, GitHub Actions (CI/CD & Pages Pipelines), Clean Architecture, Princípios SOLID, Modelo de Qualidade ISO/IEC 25010:2023, Procedimentos ISO 9001:2026.

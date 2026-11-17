@@ -1,87 +1,46 @@
-# Olá, eu sou Wallace Soares 👋
+# Olá, eu sou Wallace de Paula Soares 👋
+### **Desenvolvedor Full Stack & Engenheiro de Software**
+*Arquitetura Offline-First • PWA • Tauri v2 (Rust) • Next.js 15 & React 19 • TypeScript Strict*
 
-<div align="center">
-
-[![Portfólio](https://img.shields.io/badge/Portfólio-wallacextreme.github.io-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white)](https://wallacextreme.github.io/portfolio/)
-[![Formação](https://img.shields.io/badge/Graduado-Estácio_de_Sá-059669?style=for-the-badge&logo=academia&logoColor=white)](https://consultadiploma.estacio.br/diploma/163.163.80fed31e1b42)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Wallace_Soares-0077b5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/wallacextreme)
-[![TecnoService NF](https://img.shields.io/badge/TecnoService_NF-IT_Support_&_Services-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/tecnoservicenf)
-[![E-mail](https://img.shields.io/badge/E--mail-wallacextreme@hotmail.com-0078d4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:wallacextreme@hotmail.com)
-[![X](https://img.shields.io/badge/X-@Wallace99341593-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Wallace99341593)
-
-</div>
+[![Portfólio](https://img.shields.io/badge/🌐_Portfólio_Interativo-2563eb?style=for-the-badge)](https://wallacextreme.github.io/portfolio/)
+[![Modo Solo Leveling](https://img.shields.io/badge/🎮_Portfólio_Hunter_Rank_S-7c3aed?style=for-the-badge)](https://wallacextreme.github.io/portfolio/sololeveling.html)
+[![Currículo Online](https://img.shields.io/badge/📄_CURRÍCULO_ONLINE_(PDF)-10b981?style=for-the-badge)](https://wallacextreme.github.io/portfolio/curriculo.html)
+[![Baixar PDF](https://img.shields.io/badge/📥_Baixar_Currículo_(PDF)-e11d48?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](https://wallacextreme.github.io/portfolio/Curriculo_Wallace_Soares_2026.pdf)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/wallacextreme)
+[![E-mail](https://img.shields.io/badge/E--mail-D14836?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:wallacextreme@hotmail.com)
 
 ---
 
-### 👨‍💻 Sobre Mim
+## ⚡ Sobre Mim
 
-**Desenvolvedor Full Stack & Engenheiro de Software** baseado no Rio de Janeiro - RJ, Brasil.  
-🎓 **Graduado em Análise e Desenvolvimento de Sistemas** pela **Universidade Estácio de Sá** (2023).
-
-* ⚡ Especialista em ecossistemas **Offline-First**, **Progressive Web Apps (PWA)** e aplicações desktop corporativas com **Tauri**.
-* 🛡️ Foco absoluto em **Clean Architecture**, testes automatizados (**Vitest/Jest**), segurança transacional (RBAC & RLS granular) e código escalável com **TypeScript**.
-* 🎮 Desenvolvedor de jogos 2D modulares com **Phaser 3** (orientação a entidades e máquinas de estado).
-* 🔧 Empreendedor técnico à frente da **TecnoService NF**, fornecendo infraestrutura de TI, estações de trabalho de alto rendimento e suporte computacional avançado.
+- 🎓 **Graduado em Análise e Desenvolvimento de Sistemas** pela Universidade Estácio de Sá ([Diploma Digital Verificável: `163.163.80fed31e1b42`](https://consultadiploma.estacio.br/diploma/163.163.80fed31e1b42)).
+- 🏗️ Especialista em transformar regras de negócio complexas (fiscal, ERP, PDV, crediário, logística e catálogos técnicos) em sistemas **Offline-First** de latência zero para Web (**PWA**) e Desktop (**Tauri v2 / Windows `.msi` & `.exe`**).
+- 🧪 Foco estrito em qualidade de engenharia: **+1.000 testes automatizados** verificados em suítes reais (**370** no Cinzas do Éter v1.0.0, **171** no GestãoPro v1.13.1, **152** na Pizzaria Full-Stack, **136+ Go-Live & E2E Playwright** no Controle de Entregas Friburgo v5.1, **126** no FiscalFlow, **30** no Catálogo TK 2024, **29** no Catálogo de Palhetas, **17** no Adesivos & PPF, **8+ E2E** no EscalaPro CLT v2.0) via Vitest, Bun Test e Playwright, tipagem estrita em TypeScript, cálculos monetários em centavos inteiros e conformidade **ISO/IEC 25010:2023**.
 
 ---
 
-### 🎓 Formação Acadêmica & Credenciais Oficiais
+## 🏆 Matriz de Projetos em Produção & Open Source
 
-* **Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas** (Tecnólogo)  
-  * **Instituição**: Universidade Estácio de Sá  
-  * **Ano de Conclusão**: 2023 | **Colação de Grau**: 14/07/2023  
-  * **Código de Autenticidade**: `163.163.80fed31e1b42`  
-  * 🔗 **Consulta Pública MEC/Estácio**: [Validar Autenticidade do Diploma](https://consultadiploma.estacio.br/diploma/163.163.80fed31e1b42)
-
----
-
-### 🚀 Projetos em Destaque
-
-| Projeto | Descrição & Engenharia | Tecnologias |
-| :--- | :--- | :--- |
-| 🛡️ **[FiscalFlow — Gestão & Auditoria Fiscal](https://github.com/wallacextreme/FiscalFlow)** | Ecossistema corporativo Offline-First em Tauri 2 e SQLite para gestão e escrituração fiscal (NF-e, NFC-e, NFS-e, CT-e, SPED) com 126 testes e governança ISO/IEC 25010 / ISO 9001. | Tauri 2 (Rust), TypeScript, SQLite, WebAssembly, Tailwind CSS |
-| 🚗 **[Catálogo de Palhetas Automotivas](https://github.com/wallacextreme/catalogo-palhetas)** | Sistema Offline-First e Cross-Reference de palhetas (Dyna, CINOY, Vetor) para linha leve com busca por medidas/posições, rastreabilidade e 29 testes automatizados. | Preact, TypeScript, Tailwind CSS v4, PWA, Tauri v2, Dexie |
-| 🍕 **[Plataforma de Pizzaria](https://github.com/wallacextreme/pizzaria-platform)** | Plataforma e-commerce completa com painel administrativo Kanban em tempo real, cálculos monetários em centavos no backend, RLS granular e suíte de testes. | Next.js 15, React 19, Supabase, TypeScript, Vitest |
-| 🏷️ **[EtiquetaPro PWA](https://github.com/wallacextreme/etiquetapro)** | Gerador industrial de etiquetas homologado para 21 gabaritos Pimaco, operando 100% offline via Service Worker com precisão milimétrica de impressão. | PWA, JavaScript ES6+, Cache API, CSS Paged Media |
-| 💼 **ERP PRO & Controle de Pagamentos** | Sistema financeiro Offline-First empacotado nativamente para Windows com persistência IndexedDB/SQLite, backup JSON e relatórios CSV. | Tauri, TypeScript, Vite, IndexedDB, SQLite |
-| ⚔️ **Cinzas do Éter** | JRPG 2D 16-bit com arquitetura modular desacoplada de entidades, gerenciador de camadas de mapas e testes com Vitest. | Phaser 3, TypeScript, Vite, Vitest |
+| Projeto | Arquitetura & Stack Principal | Qualidade & Destaques Técnicos | Links |
+| :--- | :--- | :--- | :---: |
+| **🖥️ OmniDesk Remote** | `Tauri 2` `Rust` `WebRTC P2P` `PBKDF2` `PWA` | Acesso Remoto P2P 60 FPS Full HD 4:4:4, Zero-Trust 600k iterações, Win32 GDI/SendInput & WSS Cloud | [Código](https://github.com/wallacextreme/omnidesk) • [PWA Live](https://omnidesk-remote.web.app) |
+| **🎨 Adesivos Resinados & PPF Pro** | `Python (PyMuPDF)` `Playwright` `Tauri 2 (Rust)` `PWA` `WebP` | Mineração de PDFs (3.396 peças, 3.435 fotos WebP HD), busca sub-50ms (1.2ms), Lightbox 400%, 4 naturezas de vínculos, **17 testes (100% pass)**, 10 Quality Gates | [Código](https://github.com/wallacextreme/adesivos-resinados-ppf) • [Demo (PWA)](https://wallacextreme.github.io/adesivos-resinados-ppf/) • [Release v1.0.0](https://github.com/wallacextreme/adesivos-resinados-ppf/releases/tag/v1.0.0) |
+| **🧾 FiscalFlow** | `Tauri 2 (Rust)` `TypeScript` `SQLite` `WASM` `Vitest` | Parser NF-e/NFC-e/NFS-e/CT-e/SPED, Módulo 11 SEFAZ, SHA-256, **126 testes (100% pass)**, ISO 25010 | [Código](https://github.com/wallacextreme/FiscalFlow) • [Demo](https://wallacextreme.github.io/FiscalFlow/) • [Release v1.0.0](https://github.com/wallacextreme/FiscalFlow/releases/tag/v1.0.0) |
+| **📦 GestãoPro ERP v1.13.1** | `Tauri 2` `Vite 8` `Tailwind v4` `IndexedDB` `Supabase` | ERP 13 módulos, PDV, **Sync Engine (Outbox + LWW)**, Keep-Alive 7 camadas, **171 testes (Bun)** | [Código](https://github.com/wallacextreme/gerenciador-de-produtos) • [Demo](https://wallacextreme.github.io/gerenciador-de-produtos/) • [Release v1.13.0](https://github.com/wallacextreme/gerenciador-de-produtos/releases/tag/v1.13.0) |
+| **🔍 Catálogo Balcão XREF** | `Python (PyMuPDF)` `TypeScript` `Tauri 2` `IndexedDB` | Engenharia reversa de PDFs (`XREF`/`SMask` -> WebP), busca sub-50ms (média 1.29ms), **26 testes** | [Código](https://github.com/wallacextreme/catalogo-balcao-pro) |
+| **🍕 Pizzaria Full-Stack (PWA)** | `Next.js 15` `React 19` `TypeScript` `Supabase` `Vitest` | Kanban Realtime, PostgreSQL RLS + **Demo Sandbox (`/demo`)** sem login, PWA instalável, **152 testes** | [Código](https://github.com/wallacextreme/pizzaria-platform) • [Demo Sandbox](https://wallacextreme.github.io/pizzaria-platform/demo/) |
+| **🛵 Controle de Entregas v5.1** | `JS ES6+` `IndexedDB v3` `PWA` `Playwright E2E` | Corredores Nova Friburgo, lote + QR ISO 18004, Outbox Offline, POD WebP & Logística Reversa | [Código](https://github.com/wallacextreme/controle-entregas-friburgo) • [Demo Recrutadores](https://wallacextreme.github.io/controle-entregas-friburgo/?demo=1) |
+| **📅 EscalaPro CLT v2.0** | `React 19` `TS 5.7` `Dexie` `Tauri 2` `Playwright` | 6 motores trabalhistas CLT / EC 141/2026, escalas PWA Offline-First & exportação Excel | [Código](https://github.com/wallacextreme/escalapro-clt) • [Demo](https://wallacextreme.github.io/escalapro-clt/) |
+| **🛡️ DEFCON: Frontline** | `Three.js` `WebGL 3D` `Vite 7` `PWA` `Save v3` | Tower Defense tático C4ISR 3D no navegador com persistência Save v3 & PWA instalável offline | [Código](https://github.com/wallacextreme/defcon-frontline) • [Demo 3D](https://wallacextreme.github.io/defcon-frontline/) |
+| **💳 Tucano Cloud (Vales)** | `Tauri 2` `Firebase RTDB` `PWA Offline` `Tailwind` | Sequências atômicas (`NP`/`REC`), blindagem de concorrência transacional, cobrança WhatsApp | [Código](https://github.com/wallacextreme/sistema-controle-vales) • [Demo](https://wallacextreme.github.io/sistema-controle-vales/) |
+| **💰 Pagamentos PRO** | `Tauri 2` `PWA` `IndexedDB` `SQLite` `Service Worker` | Conciliação multi-bancos, relatórios paisagem A4 inteligentes, backup JSON, exportação CSV e Modo Demo | [Código](https://github.com/wallacextreme/controle-de-pagamentos-pro) • [Demo](https://wallacextreme.github.io/controle-de-pagamentos-pro/) • [Release v1.3.0](https://github.com/wallacextreme/controle-de-pagamentos-pro/releases/tag/v1.3.0) |
+| **🏷️ EtiquetaPro PWA** | `JS Vanilla` `PWA` `CSS Paged Media` `Service Worker` | Diagramação física milimétrica (`mm`) homologada para 21 gabaritos Pimaco (A4/Carta) | [Código](https://github.com/wallacextreme/etiquetapro) • [Demo](https://wallacextreme.github.io/etiquetapro/) |
+| **⚔️ Cinzas do Éter v1.0.0** | `Phaser 3` `TS 6.0` `Vite 8` `Vitest` | JRPG 16-Bit Golden Master com EventBus, FSM, interiores HD-2D, mapa-mundi e **370 testes (100% pass)** | [Código](https://github.com/wallacextreme/cinzas-do-eter) • [Demo](https://wallacextreme.github.io/cinzas-do-eter/) |
 
 ---
 
-### 🛠️ Stack Tecnológica
+## 🛠️ Stack Tecnológica
 
-<div align="center">
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Tauri](https://img.shields.io/badge/Tauri-FFC131?style=flat-square&logo=tauri&logoColor=black)
-![Phaser](https://img.shields.io/badge/Phaser_3-8B4513?style=flat-square&logo=gaming&logoColor=white)
-![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-
-</div>
-
----
-
-### 📊 Estatísticas do GitHub
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=wallacextreme&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Estatísticas do GitHub de Wallace Soares" height="175"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=wallacextreme&layout=compact&theme=tokyonight&hide_border=true" alt="Linguagens Mais Utilizadas" height="175"/>
-</div>
-
----
-
-### 📬 Conecte-se Comigo
-
-* 💼 **Perfil Profissional**: [LinkedIn](https://linkedin.com/in/wallacextreme)
-* 🖥️ **Portfólio Web**: [wallacextreme.github.io/portfolio](https://wallacextreme.github.io/portfolio/)
-* 📄 **Currículo Completo**: [Acessar Versão Online / PDF](https://wallacextreme.github.io/portfolio/curriculo.html)
-* 🛠️ **Suporte Técnico & TI**: [TecnoService NF](https://www.instagram.com/tecnoservicenf) *(Infraestrutura de TI & Hardware)*
-* ✉️ **Contato Direto**: [wallacextreme@hotmail.com](mailto:wallacextreme@hotmail.com)
+- **Frontend & Mobile/PWA:** TypeScript, JavaScript ES6+, React 19, Next.js 15, Tailwind CSS, HTML5, CSS3 Paged Media, Service Workers, IndexedDB.
+- **Backend, Dados & Automação:** Node.js, Bun, Python (PyMuPDF, Pillow), Supabase (PostgreSQL, Auth, RLS, Realtime), Firebase (Firestore, RTDB), SQLite, WebAssembly (`sql.js`), PHP.
+- **Desktop, Games & QA:** Tauri v2 (Rust / Windows `.exe` & `.msi`), Phaser 3, Vite, Vitest, Jest, Git & GitHub Actions.
